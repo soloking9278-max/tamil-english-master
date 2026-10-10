@@ -1,169 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#123a52">
-<title>Tamil English Master — Intermediate</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#11142b">
+<meta name="description" content="Tamil English Master — practical intermediate English for workplace communication, automotive service, GCC interviews and everyday fluency. Free public learning app.">
+<title>Tamil English Master | Speak with confidence</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="manifest" href="manifest.json">
 <style>
-:root{--navy:#123a52;--teal:#087e8b;--gold:#f2b84b;--paper:#f4f7f9;--ink:#172b3a;--muted:#607583;--white:#fff}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Arial,sans-serif}
-header{background:linear-gradient(130deg,#123a52,#087e8b);color:white;padding:26px 18px 22px}
-.wrap{max-width:1050px;margin:auto;padding:0 16px}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.76rem;font-weight:800;color:#cdeff1}
-h1{font-size:clamp(1.8rem,5vw,2.7rem);line-height:1.1;margin:7px 0}header p{max-width:700px;margin:10px 0 0;color:#e4f5f7}
-.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.pill{border:1px solid #ffffff66;border-radius:99px;padding:4px 10px;font-size:.83rem}
-main{padding:20px 0 40px}.layout{display:grid;grid-template-columns:250px 1fr;gap:18px;align-items:start}
-.card{background:white;border:1px solid #dce6eb;border-radius:16px;padding:18px;box-shadow:0 4px 18px #123a520a;margin-bottom:16px}
-h2{font-size:1.25rem;margin:0 0 10px}h3{font-size:1.03rem;margin:0 0 8px}
-.small{font-size:.9rem;color:var(--muted)}.modules button{display:block;width:100%;text-align:left;margin:7px 0;background:#f3f7f9;color:var(--ink);border:1px solid #dbe6eb}
-button,select{font:inherit;border-radius:10px;padding:10px 12px;border:1px solid #c9d8df;background:white;color:var(--ink)}
-button{cursor:pointer;font-weight:700}button.primary{background:var(--teal);color:white;border-color:var(--teal)}button.gold{background:#fff4d7;border-color:#f1d28a}
-button:focus-visible,select:focus-visible{outline:3px solid #f2b84b;outline-offset:2px}
-.module-active{border-color:var(--teal)!important;background:#e6f6f6!important}
-.phrase{border:1px solid #e0e9ed;border-radius:13px;padding:14px;margin:10px 0;background:#fbfdfe}
-.english{font-size:1.15rem;font-weight:800;color:#123a52}.tamil{margin-top:4px}.meta{font-size:.82rem;color:var(--muted);margin-top:5px}
-.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.step{display:flex;gap:10px;margin:10px 0}.num{background:#e0f3f3;color:#075a64;border-radius:9px;padding:3px 9px;font-weight:800;height:max-content}
-.progress{height:9px;background:#e5edf0;border-radius:99px;overflow:hidden}.progress div{height:100%;background:var(--teal);width:0;transition:width .2s}
-.quizq{padding:14px 0;border-bottom:1px solid #e5ecef}.quizq:last-child{border-bottom:0}.options{display:grid;gap:7px;margin-top:8px}.options label{padding:9px 11px;border:1px solid #d8e4e9;border-radius:10px;cursor:pointer}.feedback{margin-top:8px;font-weight:700}
-footer{text-align:center;color:var(--muted);font-size:.85rem;padding:15px}
-.notice{background:#fff6df;border:1px solid #f0d48e;border-radius:12px;padding:12px}
-@media(max-width:760px){.layout{grid-template-columns:1fr}.modules{display:grid;grid-template-columns:1fr 1fr;gap:5px}.modules button{margin:0}.card{padding:15px}}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--bg:#f5f6fb;--ink:#191b31;--muted:#74778d;--navy:#11142b;--navy2:#1d2141;--purple:#7669f7;--purple2:#a49cff;--mint:#42d6b2;--gold:#f3c96b;--border:#e7e8f1;--white:#fff;--soft:#f0efff;--shadow:0 14px 40px rgba(29,29,67,.07);--radius:22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55}button,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.app{min-height:100vh}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 max(22px,calc((100vw - 1360px)/2));background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:12px;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.04em}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(145deg,#887dff,#5f4eea);display:grid;place-items:center;color:#fff;font-size:19px;box-shadow:0 7px 18px #7669f733}.brand span{display:block;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-family:'DM Sans',sans-serif;font-weight:700;margin-top:-2px}.top-actions{display:flex;align-items:center;gap:12px}.public-tag{background:#e6fbf4;color:#167a60;padding:7px 12px;border-radius:100px;font-size:12px;font-weight:800;display:flex;align-items:center;gap:6px}.avatar{width:38px;height:38px;border-radius:50%;background:#f3dba1;display:grid;place-items:center;font-weight:800;color:#55441e}
+.shell{display:grid;grid-template-columns:248px minmax(0,1fr);max-width:1400px;margin:auto;min-height:calc(100vh - 76px)}.sidebar{background:#fff;border-right:1px solid var(--border);padding:26px 16px;display:flex;flex-direction:column;gap:26px}.nav-label{padding:0 13px;text-transform:uppercase;letter-spacing:.14em;font-size:10px;font-weight:800;color:#999bb0;margin-bottom:8px}.nav-item{width:100%;border:0;background:transparent;text-align:left;display:flex;gap:12px;align-items:center;padding:12px 13px;border-radius:13px;color:#777990;font-weight:700;font-size:14px;margin:3px 0}.nav-item .ni{font-size:18px;width:25px;text-align:center}.nav-item.active{background:var(--soft);color:#5a4fe0;box-shadow:inset 3px 0 0 var(--purple)}.sidebar-note{margin-top:auto;border-radius:18px;padding:16px;background:linear-gradient(145deg,#181c3e,#343264);color:#fff;position:relative;overflow:hidden}.sidebar-note:after{content:"";position:absolute;width:100px;height:100px;border-radius:50%;background:#7669f755;right:-22px;top:-25px}.sidebar-note strong{display:block;font-family:Manrope,sans-serif;font-size:14px;position:relative;z-index:1}.sidebar-note p{font-size:12px;color:#c6c7e7;position:relative;z-index:1;margin:8px 0 12px}.sidebar-note .tiny-pill{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#f3c96b;font-weight:800;position:relative;z-index:1}
+main{min-width:0;padding:30px clamp(18px,3.2vw,48px) 55px}.welcome{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:24px}.kicker{font-size:11px;font-weight:800;letter-spacing:.16em;color:#7770e7;text-transform:uppercase}.welcome h1{font:800 clamp(27px,3vw,38px)/1.15 Manrope,sans-serif;letter-spacing:-.055em;margin:7px 0 8px}.welcome p{margin:0;color:var(--muted);max-width:680px;font-size:14px}.level-chip{white-space:nowrap;border:1px solid #dedafc;color:#6255dd;background:#fff;border-radius:100px;padding:9px 14px;font-size:12px;font-weight:800;align-self:center}
+.hero{min-height:245px;background:radial-gradient(ellipse at 90% 10%,#8a80ff55,transparent 36%),linear-gradient(112deg,#151832,#222651 63%,#433b83);color:white;border-radius:26px;padding:30px clamp(22px,3.5vw,42px);display:grid;grid-template-columns:1.4fr .6fr;gap:18px;align-items:center;box-shadow:0 18px 45px #22265122;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:270px;height:270px;border:1px solid #ffffff12;border-radius:50%;right:7%;top:-80px;box-shadow:0 0 0 32px #ffffff08,0 0 0 64px #ffffff05}.hero-content{position:relative;z-index:1}.hero .overline{color:#c6c4ff;text-transform:uppercase;letter-spacing:.15em;font-size:10px;font-weight:800}.hero h2{font:800 clamp(25px,3.2vw,38px)/1.13 Manrope,sans-serif;letter-spacing:-.05em;max-width:520px;margin:10px 0}.hero p{font-size:13px;color:#d3d5ed;max-width:470px;margin:0 0 20px}.primary-btn{border:0;border-radius:12px;padding:12px 17px;background:var(--gold);color:#292442;font-weight:800;box-shadow:0 7px 20px #00000018}.primary-btn:hover{filter:brightness(1.04);transform:translateY(-1px)}.hero-foot{display:flex;gap:17px;align-items:center;flex-wrap:wrap;font-size:11px;color:#d2d3e9;margin-top:15px}.hero-foot span{display:flex;gap:6px;align-items:center}.hero-visual{z-index:1;display:flex;justify-content:center;align-items:center}.orb{width:180px;height:180px;border-radius:50%;background:radial-gradient(circle at 30% 27%,#dcd8ff,#8d83ff 28%,#4d45af 62%,#252452 80%);box-shadow:inset -12px -17px 28px #080a25aa,0 15px 50px #0a0b2e77;display:grid;place-items:center;position:relative;border:1px solid #ffffff40}.orb:before,.orb:after{content:"";position:absolute;border:1px solid #ffffff4c;border-radius:50%;width:212px;height:65px;transform:rotate(-27deg)}.orb:after{width:230px;height:85px;transform:rotate(38deg)}.orb-inner{font:800 40px Manrope,sans-serif;letter-spacing:-.08em;color:#fff;text-shadow:0 5px 18px #201c67;text-align:center}.orb-inner small{font:700 10px 'DM Sans',sans-serif;display:block;letter-spacing:.18em;color:#e4e1ff;margin-top:-1px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:20px 0 28px}.stat{background:#fff;border:1px solid var(--border);border-radius:17px;padding:17px 18px;display:flex;align-items:center;gap:14px;min-width:0}.stat-icon{width:43px;height:43px;display:grid;place-items:center;border-radius:14px;font-size:20px;flex-shrink:0}.stat:nth-child(1) .stat-icon{background:#eeecff}.stat:nth-child(2) .stat-icon{background:#e6fbf4}.stat:nth-child(3) .stat-icon{background:#fff5df}.stat strong{display:block;font:800 20px Manrope,sans-serif;letter-spacing:-.04em}.stat small{display:block;color:var(--muted);font-size:11px}
+.section-head{display:flex;justify-content:space-between;gap:15px;align-items:center;margin:30px 0 15px}.section-head h2{font:800 21px Manrope,sans-serif;letter-spacing:-.035em;margin:0}.section-head p{margin:3px 0 0;color:var(--muted);font-size:12px}.text-btn{border:0;background:transparent;color:#665be5;font-weight:800;font-size:12px;padding:8px}.module-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.module-card{background:white;border:1px solid var(--border);border-radius:19px;padding:18px;transition:.2s;position:relative;overflow:hidden}.module-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#d8d3ff}.module-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.module-icon{width:45px;height:45px;border-radius:15px;display:grid;place-items:center;font-size:21px}.tone1{background:#eeecff}.tone2{background:#e5f9f2}.tone3{background:#fff2dd}.tone4{background:#fde9f4}.tone5{background:#e6f2ff}.module-no{font:800 11px Manrope,sans-serif;color:#a1a3b6}.module-card h3{font:800 15px Manrope,sans-serif;letter-spacing:-.02em;margin:0 0 7px}.module-card p{color:var(--muted);font-size:12px;min-height:55px;margin:0 0 16px}.module-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #f0f0f6;padding-top:12px;font-size:11px;color:#777990}.badge{border-radius:100px;padding:5px 8px;font-size:10px;font-weight:800;background:#effbf6;color:#1a8b68}.badge.soon{background:#f2f1f8;color:#85869b}.module-card button{border:0;padding:0;background:transparent;color:#5e53db;font-weight:800;font-size:12px}
+.content-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.75fr);gap:17px;align-items:start;margin-top:23px}.panel{background:#fff;border:1px solid var(--border);border-radius:20px;padding:22px;min-width:0}.panel h2{font:800 19px Manrope,sans-serif;letter-spacing:-.035em;margin:0 0 4px}.subline{color:var(--muted);font-size:12px;margin:0 0 18px}.lesson-row{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid #f0f1f6}.lesson-row:last-child{border-bottom:0;padding-bottom:0}.lesson-symbol{flex-shrink:0;width:43px;height:43px;border-radius:14px;background:#f0efff;display:grid;place-items:center;color:#685be4;font-size:18px}.lesson-meta{flex:1;min-width:0}.lesson-meta strong{display:block;font-size:13px}.lesson-meta span{display:block;color:var(--muted);font-size:11px;margin-top:3px}.lesson-open{border:1px solid #e4e0ff;background:#f5f4ff;color:#6256de;padding:9px 11px;border-radius:10px;font-weight:800;font-size:11px;white-space:nowrap}.routine{display:flex;gap:12px;align-items:flex-start;padding:10px 0}.routine i{font-style:normal;width:28px;height:28px;border-radius:9px;background:#f0efff;color:#5c51d9;display:grid;place-items:center;font-size:12px;font-weight:800;flex-shrink:0}.routine strong{font-size:12px;display:block}.routine p{font-size:11px;color:var(--muted);margin:3px 0 0}.weekly-card{background:linear-gradient(130deg,#24274e,#474082);color:white;border-radius:20px;padding:20px;margin-top:16px}.weekly-card h3{margin:0 0 4px;font:800 16px Manrope,sans-serif}.weekly-card p{color:#d4d4ec;font-size:12px;margin:0 0 15px}.week-bar{height:7px;border-radius:100px;background:#ffffff20;overflow:hidden}.week-bar span{display:block;height:100%;width:25%;background:var(--mint);border-radius:100px}.weekly-foot{display:flex;justify-content:space-between;color:#d4d4ec;font-size:10px;margin-top:8px}
+.view{display:none}.view.active{display:block}.lesson-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:20px}.lesson-heading h2{font:800 27px Manrope,sans-serif;letter-spacing:-.05em;margin:5px 0}.lesson-heading p{color:var(--muted);font-size:13px;margin:0}.lesson-label{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:#6c61e8;font-weight:800}.soft-card{padding:17px;border-radius:15px;background:#f9f9fe;border:1px solid #eeedf8;margin:12px 0}.phrase-en{font:700 17px/1.4 Manrope,sans-serif;color:#24264b;letter-spacing:-.02em}.phrase-ta{font-size:13px;margin-top:8px}.phrase-tag{color:#777990;font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;margin-bottom:8px}.button-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.btn{padding:9px 12px;border:1px solid var(--border);border-radius:10px;background:#fff;color:var(--ink);font-weight:700;font-size:12px}.btn.purple{background:#6c60e9;color:#fff;border-color:#6c60e9}.btn.dark{background:var(--navy);color:#fff;border-color:var(--navy)}.grammar{border-left:3px solid var(--gold);background:#fff9e9;padding:14px 16px;border-radius:0 12px 12px 0;font-size:12px;margin:15px 0}.grammar strong{display:block;font-size:13px;margin-bottom:4px}.practice-box{border-radius:16px;background:linear-gradient(145deg,#171a39,#30315e);color:white;padding:19px;margin-top:14px}.practice-box .phrase-en{color:#fff}.practice-box .phrase-ta{color:#d5d5ec}.practice-box .phrase-tag{color:#b9b3ff}.practice-status{font-size:11px;color:#b9b9d8;margin-top:8px}.quiz-question{padding:17px 0;border-bottom:1px solid #ececf4}.quiz-question:last-child{border-bottom:0}.quiz-question strong{font-size:13px}.quiz-options{display:grid;gap:7px;margin-top:10px}.quiz-option{display:flex;align-items:flex-start;gap:9px;border:1px solid #e4e5ef;border-radius:11px;padding:10px 12px;cursor:pointer;font-size:12px}.quiz-option:has(input:checked){border-color:#8176f0;background:#f5f4ff}.quiz-option input{accent-color:#6c60e9;margin-top:3px}.feedback{font-size:12px;margin-top:8px;font-weight:700}.field{border:1px solid var(--border);background:#fff;border-radius:11px;padding:10px;width:100%;margin:5px 0 12px}.footer{border-top:1px solid var(--border);padding:18px 0;color:var(--muted);font-size:11px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:30px}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#14172e;color:white;padding:12px 18px;border-radius:13px;box-shadow:0 15px 50px #11142b40;font-size:12px;z-index:20;display:none}.toast.show{display:block}
+.mobile-menu{display:none}
+@media(max-width:1050px){.module-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-visual{opacity:.75}.content-grid{grid-template-columns:1fr}.sidebar{padding:18px 12px}}
+@media(max-width:760px){.topbar{height:65px;padding:0 15px}.brand{font-size:14px}.logo{width:37px;height:37px}.public-tag{font-size:10px;padding:6px 8px}.avatar{display:none}.shell{display:block}.sidebar{display:flex;flex-direction:row;gap:5px;padding:9px 12px;border-right:0;border-bottom:1px solid var(--border);overflow-x:auto;position:sticky;top:65px;z-index:8}.nav-label,.sidebar-note{display:none}.nav-item{width:auto;white-space:nowrap;padding:9px 12px;margin:0;font-size:12px;gap:6px}.nav-item .ni{font-size:15px;width:auto}.nav-item.active{box-shadow:inset 0 -3px 0 var(--purple)}main{padding:22px 15px 38px}.welcome{align-items:flex-start;flex-direction:column;gap:10px}.level-chip{align-self:flex-start}.hero{grid-template-columns:1fr;padding:24px;min-height:0}.hero-visual{display:none}.hero h2{font-size:30px}.stats{gap:8px}.stat{padding:12px 10px;gap:8px;border-radius:14px}.stat-icon{width:34px;height:34px;font-size:17px;border-radius:11px}.stat strong{font-size:17px}.stat small{font-size:9px}.module-grid{grid-template-columns:1fr}.module-card p{min-height:0}.content-grid{gap:13px}.panel{padding:17px}.lesson-heading h2{font-size:24px}.lesson-open{padding:8px}.footer{font-size:10px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
 <body>
-<header><div class="wrap">
-<div class="eyebrow">Tamil support • Practical spoken English</div>
-<h1>Tamil English Master</h1>
-<p>Intermediate track — build confident workplace English, automotive customer communication, GCC interviews and everyday fluency.</p>
-<div class="pills"><span class="pill">Intermediate</span><span class="pill">Tamil explanations</span><span class="pill">English listening</span><span class="pill">Repeat-after-me</span></div>
-</div></header>
-<main class="wrap">
-<div class="layout">
-<aside>
-<section class="card">
-<h2>Your progress</h2><div class="row" style="justify-content:space-between"><span class="small">Lesson 1 practice</span><strong id="pct">0%</strong></div>
-<div class="progress" aria-label="Lesson practice progress"><div id="bar"></div></div>
-<p class="small" id="progressText">Complete the practice steps to build your routine.</p>
-<button class="primary" id="resetProgress">Reset lesson progress</button>
-</section>
-<section class="card">
-<h2>Course modules</h2><p class="small">Choose a track. Lessons will be added in sequence.</p>
-<div class="modules" id="modules">
-<button class="module-active" data-module="0">1. Fluent Conversation</button>
-<button data-module="1">2. Professional English</button>
-<button data-module="2">3. Automotive English</button>
-<button data-module="3">4. GCC Interviews</button>
-<button data-module="4">5. Fluency Studio</button>
+<div class="app">
+<header class="topbar">
+  <a class="brand" href="#" aria-label="Tamil English Master home" onclick="showView('home');return false">
+    <div class="logo">த</div><div>Tamil English Master<span>Learn · Speak · Grow</span></div>
+  </a>
+  <div class="top-actions"><div class="public-tag"><span>●</span> Free public learning</div><div class="avatar" aria-label="Learner profile">T</div></div>
+</header>
+<div class="shell">
+  <aside class="sidebar" aria-label="Main navigation">
+    <div style="width:100%">
+      <div class="nav-label">Workspace</div>
+      <button class="nav-item active" data-view="home"><span class="ni">⌂</span> Dashboard</button>
+      <button class="nav-item" data-view="course"><span class="ni">▤</span> Course library</button>
+      <button class="nav-item" data-view="lesson"><span class="ni">▷</span> Lesson 1</button>
+      <button class="nav-item" data-view="practice"><span class="ni">◉</span> Speaking studio</button>
+      <button class="nav-item" data-view="quiz"><span class="ni">✓</span> Knowledge check</button>
+    </div>
+    <div class="sidebar-note"><div class="tiny-pill">Your next step</div><strong>Small practice. Real progress.</strong><p>Ten focused minutes a day can help you build a stronger speaking habit.</p><button class="btn" onclick="showView('lesson')">Continue learning ↗</button></div>
+  </aside>
+  <main>
+    <section class="view active" id="view-home">
+      <div class="welcome"><div><div class="kicker">Your learning space</div><h1>Build confidence. Speak naturally.</h1><p>A practical English learning space with Tamil support — built for work, interviews and everyday conversations.</p></div><div class="level-chip">✦ INTERMEDIATE PATH</div></div>
+      <section class="hero">
+        <div class="hero-content"><div class="overline">Featured lesson · 01</div><h2>Make your English sound more professional.</h2><p>Practise useful phrases, understand the grammar behind them, and say them with confidence in a workplace or interview.</p><button class="primary-btn" onclick="showView('lesson')">Continue Lesson 1 <span aria-hidden="true">→</span></button><div class="hero-foot"><span>◷ 10 minutes</span><span>◉ Listen & repeat</span><span>✓ Quiz included</span></div></div>
+        <div class="hero-visual"><div class="orb"><div class="orb-inner">TE<small>MASTER YOUR VOICE</small></div></div></div>
+      </section>
+      <div class="stats">
+        <div class="stat"><div class="stat-icon">▣</div><div><strong>5</strong><small>Learning modules</small></div></div>
+        <div class="stat"><div class="stat-icon">♫</div><div><strong id="statPractice">0%</strong><small>Lesson practice progress</small></div></div>
+        <div class="stat"><div class="stat-icon">◷</div><div><strong>10 min</strong><small>Suggested daily routine</small></div></div>
+      </div>
+      <div class="section-head"><div><h2>Your learning path</h2><p>Five practical tracks. Start with the featured intermediate lesson.</p></div><button class="text-btn" onclick="showView('course')">View course library ↗</button></div>
+      <div class="module-grid" id="moduleGrid"></div>
+      <div class="content-grid">
+        <section class="panel"><h2>Continue learning</h2><p class="subline">Your current lesson and practice steps</p>
+          <div class="lesson-row"><div class="lesson-symbol">Aa</div><div class="lesson-meta"><strong>Sound professional without sounding complicated</strong><span>Intermediate · Speaking · 10 min</span></div><button class="lesson-open" onclick="showView('lesson')">Open lesson →</button></div>
+          <div class="lesson-row"><div class="lesson-symbol">♫</div><div class="lesson-meta"><strong>Listen and repeat</strong><span>Three useful phrases with Tamil explanations</span></div><button class="lesson-open" onclick="showView('practice')">Practise →</button></div>
+          <div class="lesson-row"><div class="lesson-symbol">✓</div><div class="lesson-meta"><strong>Check what you learned</strong><span>Five questions with instant feedback</span></div><button class="lesson-open" onclick="showView('quiz')">Take quiz →</button></div>
+        </section>
+        <section class="panel"><h2>A simple daily routine</h2><p class="subline">Consistency beats cramming</p>
+          <div class="routine"><i>1</i><div><strong>Listen · 2 minutes</strong><p>Hear each phrase and understand the meaning.</p></div></div>
+          <div class="routine"><i>2</i><div><strong>Repeat · 3 minutes</strong><p>Speak each sentence three times out loud.</p></div></div>
+          <div class="routine"><i>3</i><div><strong>Role-play · 3 minutes</strong><p>Answer the interview question without reading.</p></div></div>
+          <div class="routine"><i>4</i><div><strong>Review · 2 minutes</strong><p>Complete the quiz and use one phrase today.</p></div></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="view" id="view-course">
+      <div class="welcome"><div><div class="kicker">Course library</div><h1>Choose your next skill.</h1><p>All tracks use practical English, short explanations and active speaking practice.</p></div><div class="level-chip">✦ INTERMEDIATE</div></div>
+      <div class="module-grid" id="courseGrid"></div>
+      <section class="panel" style="margin-top:20px"><h2>Available lesson</h2><p class="subline">New lesson content can be published to this library as the course grows.</p><div class="lesson-row"><div class="lesson-symbol">01</div><div class="lesson-meta"><strong>Sound professional without sounding complicated</strong><span>Fluent Conversation · phrases, grammar, role-play and quiz</span></div><button class="lesson-open" onclick="showView('lesson')">Start →</button></div></section>
+    </section>
+
+    <section class="view" id="view-lesson">
+      <div class="lesson-heading"><div><div class="lesson-label">Module 1 · Lesson 1 · Intermediate</div><h2>Sound professional without sounding complicated.</h2><p>Learn three phrases you can use at work and in an interview.</p></div><div class="level-chip">10 MIN</div></div>
+      <section class="panel"><h2>01 · Learn the phrases</h2><p class="subline">Tamil meaning first. Then listen, pause and say the English sentence out loud.</p><div id="lessonPhrases"></div>
+        <div class="grammar"><strong>Grammar focus: “focus on + verb-ing”</strong>“I focus on solving customer issues.” is natural. Avoid “I focus to solving customer issues.” After the preposition “on”, use the -ing form here: solving, improving, coordinating.<br><span lang="ta">“on” என்பது preposition. இங்கு அதற்குப் பிறகு verb + ing: solving, improving, coordinating.</span></div>
+      </section>
+      <section class="panel" style="margin-top:16px"><h2>02 · Interview role-play</h2><p class="subline">Listen to the question. Then answer in your own voice.</p><div class="soft-card"><div class="phrase-tag">Interviewer asks</div><div class="phrase-en">“Could you tell me about your professional experience?”</div><div class="button-row"><button class="btn purple" onclick="speak('Could you tell me about your professional experience?')">♫ Listen to question</button></div></div>
+        <div class="soft-card"><div class="phrase-tag">Model answer</div><div class="phrase-en" id="modelAnswer">I have extensive experience in the automotive industry. My background includes customer service, workshop coordination and inventory management. I focus on solving problems efficiently and keeping customers informed.</div><div class="phrase-ta" lang="ta">ஆட்டோமொபைல் துறையில் எனக்கு விரிவான அனுபவம் உள்ளது. Customer service, workshop coordination, inventory management ஆகியவற்றில் அனுபவம் உள்ளது. பிரச்சினைகளைத் திறமையாகத் தீர்த்து, வாடிக்கையாளர்களுக்குத் தொடர்ந்து தகவல் தெரிவிப்பதில் கவனம் செலுத்துகிறேன்.</div><div class="button-row"><button class="btn purple" onclick="speak(document.getElementById('modelAnswer').innerText)">♫ Listen to model answer</button><button class="btn" id="markRoleplay">✓ I practised the answer</button></div></div>
+        <p class="subline">Tip: speak it once while reading, once while looking away, and once from memory. This page does not record or upload your voice.</p>
+      </section>
+      <div class="button-row" style="margin-top:17px"><button class="btn" onclick="showView('practice')">Open speaking studio →</button><button class="btn purple" onclick="showView('quiz')">Take Lesson 1 quiz →</button></div>
+    </section>
+
+    <section class="view" id="view-practice">
+      <div class="welcome"><div><div class="kicker">Speaking studio</div><h1>Listen. Pause. Speak.</h1><p>Use each sentence as a short shadowing drill. Aim for natural rhythm, not speed.</p></div></div>
+      <section class="panel"><h2>Guided repeat-after-me</h2><p class="subline">Play the English sentence, repeat aloud, then move to the next one.</p><div class="practice-box"><div class="phrase-tag" id="practiceCount">SENTENCE 1 OF 3</div><div class="phrase-en" id="practiceEn">I have extensive experience in the automotive industry.</div><div class="phrase-ta" id="practiceTa" lang="ta">ஆட்டோமொபைல் துறையில் எனக்கு விரிவான அனுபவம் உள்ளது.</div><div class="button-row"><button class="primary-btn" onclick="speak(phrases[practiceIndex].en)">♫ Listen in English</button><button class="btn" onclick="speak(phrases[practiceIndex].ta,true)">தமிழ் விளக்கம் கேள்</button><button class="btn" id="repeatPractice">↻ Play again</button></div><div class="practice-status" id="practiceStatus">Step 1: Listen and notice the rhythm.</div></div><div class="button-row"><button class="btn dark" id="prevPractice">← Previous</button><button class="btn purple" id="nextPractice">I repeated it · Next →</button></div></section>
+      <section class="panel" style="margin-top:16px"><h2>Voice settings</h2><p class="subline">Available voices vary by browser, operating system and installed language packs.</p><label for="voiceSelect" style="font-size:12px;font-weight:800">English voice</label><select class="field" id="voiceSelect"><option value="">Default English voice</option></select><div class="button-row"><button class="btn purple" id="testEnglish">Test English voice</button><button class="btn" id="testTamil">Test Tamil voice</button></div><p class="subline" style="margin-top:12px">Tamil audio needs a Tamil speech voice from your browser/device. If one is unavailable, the app will show a message. Some browsers only load speech voices after the page opens.</p></section>
+    </section>
+
+    <section class="view" id="view-quiz">
+      <div class="welcome"><div><div class="kicker">Lesson 1 · Knowledge check</div><h1>Test your understanding.</h1><p>Five questions on professional phrases and the grammar from this lesson.</p></div><div class="level-chip">5 QUESTIONS</div></div>
+      <section class="panel"><form id="quizForm"><div id="quizQuestions"></div><div class="button-row"><button class="btn purple" type="submit">Check my answers</button><button class="btn" type="button" id="tryAgain">Try again</button></div><div id="quizScore" role="status" style="font:800 18px Manrope;margin-top:16px"></div></form></section>
+    </section>
+
+    <div class="footer"><span>© <span id="year"></span> Tamil English Master · Free public learning</span><span>Progress is saved locally in this browser · No account required</span></div>
+  </main>
 </div>
-</section>
-<section class="card">
-<h3>Voice settings</h3><label class="small" for="voiceSelect">English voice</label><br>
-<select id="voiceSelect" style="width:100%;margin:6px 0 10px"><option value="">Default English voice</option></select>
-<div class="row"><button id="testEnglish">Test English voice</button><button id="testTamil">Test Tamil voice</button></div>
-<p class="small">Voice options depend on your browser and device. Tamil audio requires a Tamil voice installed or provided by the browser.</p>
-</section>
-</aside>
-<div>
-<section class="card" id="moduleIntro">
-<div class="eyebrow" style="color:#087e8b">Module 1 • Lesson 1</div>
-<h2>Sound professional without sounding complicated</h2>
-<p>இது absolute beginner lesson இல்லை. ஏற்கனவே basic English தெரியும் என்று வைத்து, natural sentence patterns, workplace confidence, clear pronunciation ஆகியவற்றில் பயிற்சி செய்வோம்.</p>
-<div class="notice"><strong>Today's target:</strong> introduce your experience, explain your work approach, and update a customer about a delay.</div>
-</section>
-<section class="card">
-<h2>1. Learn the phrases</h2>
-<p class="small">முதலில் Tamil meaning பாருங்கள். பிறகு English audio கேட்டு, sentence-ஐ சத்தமாகச் சொல்லுங்கள்.</p>
-<div id="phrases"></div>
-</section>
-<section class="card">
-<h2>2. Repeat-after-me studio</h2>
-<p>ஒவ்வொரு sentence-க்கும்: <strong>Listen → Pause → Speak → Repeat</strong>. கீழே உள்ள buttons மூலம் ஒவ்வொரு கட்டத்தையும் practice செய்யலாம்.</p>
-<div class="row"><button class="primary" id="startRepeat">Start guided practice</button><button id="repeatAgain">Repeat current sentence</button></div>
-<div class="phrase"><div class="meta" id="repeatStep">Ready when you are</div><div class="english" id="repeatSentence">I have extensive experience in the automotive industry.</div><div class="tamil" id="repeatTamil">ஆட்டோமொபைல் துறையில் எனக்கு விரிவான அனுபவம் உள்ளது.</div><div class="actions"><button class="gold" id="listenCurrent">Listen</button><button id="nextRepeat">I repeated it — next</button></div></div>
-<p class="small">Tip: copy the rhythm, not just each word. Start slowly, then say it at normal speed.</p>
-</section>
-<section class="card">
-<h2>3. Grammar that matters</h2>
-<h3>focus on + verb-ing</h3>
-<p><strong>Natural:</strong> “I focus on solving customer issues.”</p>
-<p><strong>Avoid:</strong> “I focus to solving customer issues.”</p>
-<p class="tamil">“on” ஒரு preposition. அதற்குப் பிறகு action சொல்லும்போது பொதுவாக verb + ing பயன்படுத்துவோம்: solving, improving, coordinating.</p>
-<div class="phrase"><div class="english">I have extensive experience in the automotive industry.</div><div class="tamil">“experience in” = ஒரு துறையில் அனுபவம்.</div><button class="gold" onclick="speak('I have extensive experience in the automotive industry.')">Listen</button></div>
-</section>
-<section class="card">
-<h2>4. Role-play: GCC job interview</h2>
-<p class="small">Interviewer கேட்கிறார்:</p><div class="phrase"><div class="english">“Could you tell me about your professional experience?”</div><button class="gold" onclick="speak('Could you tell me about your professional experience?')">Listen to interviewer</button></div>
-<p><strong>Model answer:</strong></p><div class="phrase"><div class="english" id="modelAnswer">I have extensive experience in the automotive industry. My background includes customer service, workshop coordination and inventory management. I focus on solving problems efficiently and keeping customers informed.</div><div class="tamil">ஆட்டோமொபைல் துறையில் எனக்கு விரிவான அனுபவம் உள்ளது. Customer service, workshop coordination, inventory management ஆகியவற்றில் அனுபவம் உள்ளது. பிரச்சினைகளைத் திறமையாகத் தீர்த்து, வாடிக்கையாளர்களுக்குத் தொடர்ந்து தகவல் தெரிவிப்பதில் கவனம் செலுத்துகிறேன்.</div><div class="actions"><button class="gold" onclick="speak(document.getElementById('modelAnswer').innerText)">Listen to model answer</button><button id="markRoleplay">I practised the answer</button></div></div>
-<p class="small">Now try saying the answer without reading. You can use your device’s voice typing separately to check what it recognises; this page does not record or upload your voice.</p>
-</section>
-<section class="card">
-<h2>5. Lesson 1 quiz</h2>
-<p class="small">Choose the best answer. You’ll get feedback after checking.</p>
-<form id="quiz">
-<div class="quizq"><strong>1. Choose the natural sentence.</strong><div class="options">
-<label><input type="radio" name="q1" value="a"> I focus to solving customer issues.</label>
-<label><input type="radio" name="q1" value="b"> I focus on solving customer issues.</label>
-<label><input type="radio" name="q1" value="c"> I focus solving on customer issues.</label></div><div class="feedback" id="f1"></div></div>
-<div class="quizq"><strong>2. A spare part is delayed. What is a professional update?</strong><div class="options">
-<label><input type="radio" name="q2" value="a"> It will definitely arrive in one hour.</label>
-<label><input type="radio" name="q2" value="b"> I don't know. Call later.</label>
-<label><input type="radio" name="q2" value="c"> I will keep you informed of any delays.</label></div><div class="feedback" id="f2"></div></div>
-<div class="quizq"><strong>3. Complete the sentence: “I have extensive experience ___ the automotive industry.”</strong><div class="options">
-<label><input type="radio" name="q3" value="a"> in</label><label><input type="radio" name="q3" value="b"> on</label><label><input type="radio" name="q3" value="c"> at</label></div><div class="feedback" id="f3"></div></div>
-<div class="quizq"><strong>4. “I focus on resolving customer issues.” In this sentence, “resolving” follows the preposition “on”.</strong><div class="options"><label><input type="radio" name="q4" value="true"> True</label><label><input type="radio" name="q4" value="false"> False</label></div><div class="feedback" id="f4"></div></div>
-<div class="quizq"><strong>5. “I will keep you informed of any delays” guarantees a specific completion time.</strong><div class="options"><label><input type="radio" name="q5" value="true"> True</label><label><input type="radio" name="q5" value="false"> False</label></div><div class="feedback" id="f5"></div></div>
-<div class="actions"><button class="primary" type="submit">Check my answers</button><button type="button" id="clearQuiz">Try again</button></div>
-<div id="score" aria-live="polite" style="margin-top:12px;font-weight:800"></div>
-</form>
-</section>
-<section class="card"><h2>Daily 10-minute routine</h2>
-<div class="step"><span class="num">1</span><div><strong>2 minutes</strong><br>Listen to each phrase and understand the Tamil meaning.</div></div>
-<div class="step"><span class="num">2</span><div><strong>3 minutes</strong><br>Repeat every phrase three times: slow, normal, confident.</div></div>
-<div class="step"><span class="num">3</span><div><strong>3 minutes</strong><br>Speak the interview answer without looking at the screen.</div></div>
-<div class="step"><span class="num">4</span><div><strong>2 minutes</strong><br>Complete the quiz and reuse one phrase at work today.</div></div>
-<button class="primary" id="markComplete">Mark lesson practice complete</button>
-</section>
-</div></div></main>
-<footer>Tamil English Master • Intermediate learning track • Progress is saved only in this browser.</footer>
+<div class="toast" id="toast" role="status"></div>
+</div>
 <script>
+const modules = [
+ {n:"01",icon:"✦",tone:"tone1",title:"Fluent Conversation",desc:"Speak naturally, express opinions, clarify misunderstandings and keep conversations moving.",label:"Available",status:"available"},
+ {n:"02",icon:"✉",tone:"tone2",title:"Professional English",desc:"Polite requests, progress updates, emails and professional WhatsApp messages.",label:"Coming next",status:"soon"},
+ {n:"03",icon:"⚙",tone:"tone3",title:"Automotive English",desc:"Diagnosis updates, estimates, warranty explanations, parts delays and customer complaints.",label:"Coming next",status:"soon"},
+ {n:"04",icon:"↗",tone:"tone4",title:"GCC Interviews",desc:"Self-introduction, experience examples, salary negotiation and interview follow-ups.",label:"Coming next",status:"soon"},
+ {n:"05",icon:"♫",tone:"tone5",title:"Fluency Studio",desc:"Listening, shadowing, pronunciation rhythm, recall drills and timed speaking challenges.",label:"Practice tools",status:"available"}
+];
 const phrases=[
-{en:"I have extensive experience in the automotive industry.",ta:"ஆட்டோமொபைல் துறையில் எனக்கு விரிவான அனுபவம் உள்ளது.",note:"Interview introduction • “experience in”"},
-{en:"I focus on solving customer issues efficiently.",ta:"வாடிக்கையாளர் பிரச்சினைகளைத் திறமையாகத் தீர்ப்பதில் கவனம் செலுத்துகிறேன்.",note:"Grammar: focus on + verb-ing"},
-{en:"I will keep you informed of any delays.",ta:"ஏதேனும் தாமதங்கள் ஏற்பட்டால் உங்களுக்குத் தொடர்ந்து தகவல் தெரிவிப்பேன்.",note:"Customer update • avoids an unconfirmed promise"}
+ {en:"I have extensive experience in the automotive industry.",ta:"ஆட்டோமொபைல் துறையில் எனக்கு விரிவான அனுபவம் உள்ளது.",tag:"Interview introduction",voice:"experience in"},
+ {en:"I focus on solving customer issues efficiently.",ta:"வாடிக்கையாளர் பிரச்சினைகளைத் திறமையாகத் தீர்ப்பதில் கவனம் செலுத்துகிறேன்.",tag:"Work approach",voice:"focus on + verb-ing"},
+ {en:"I will keep you informed of any delays.",ta:"ஏதேனும் தாமதங்கள் ஏற்பட்டால் உங்களுக்குத் தொடர்ந்து தகவல் தெரிவிப்பேன்.",tag:"Customer update",voice:"professional communication"}
 ];
-const modules=[
-["Fluent Conversation","Natural sentence patterns, explaining opinions, clarifying misunderstandings and keeping a conversation moving."],
-["Professional English","Polite requests, progress updates, reporting problems, email and WhatsApp language."],
-["Automotive English","Customer complaints, diagnosis updates, estimates, warranty explanations, parts delays and workshop coordination."],
-["GCC Interviews","Self-introduction, strengths, experience examples, salary negotiation and confident follow-up questions."],
-["Fluency Studio","Listening and shadowing, pronunciation rhythm, recall drills and timed speaking challenges."]
+const quiz=[
+ {q:"Choose the most natural sentence.",opts:["I focus to solving customer issues.","I focus on solving customer issues.","I focus solving on customer issues."],a:1,why:"Use “focus on + verb-ing”: focus on solving."},
+ {q:"A spare part is delayed. Which reply sounds professional without promising an unconfirmed time?",opts:["It will definitely arrive in one hour.","I do not know. Call later.","I will keep you informed of any delays."],a:2,why:"This promises communication, not a delivery time that has not been confirmed."},
+ {q:"Complete: “I have extensive experience ___ the automotive industry.”",opts:["in","on","at"],a:0,why:"The natural expression is “experience in” a field."},
+ {q:"In “I focus on resolving customer issues,” the word “resolving” follows the preposition “on.”",opts:["True","False"],a:0,why:"“Resolving” is the -ing form following “on” in this phrase."},
+ {q:"“I will keep you informed of any delays” guarantees a specific completion time.",opts:["True","False"],a:1,why:"It commits to keeping the customer informed, not to a particular completion time."}
 ];
-let current=0, repeatIndex=0, practiced=new Set();
 const $=id=>document.getElementById(id);
-function renderPhrases(){$("phrases").innerHTML=phrases.map((p,i)=>`<div class="phrase"><div class="english">${p.en}</div><div class="tamil">${p.ta}</div><div class="meta">${p.note}</div><div class="actions"><button class="gold" data-listen="${i}">Listen in English</button><button data-listenta="${i}">Tamil explanation</button><button data-practice="${i}">I repeated it</button></div></div>`).join("");document.querySelectorAll("[data-listen]").forEach(b=>b.onclick=()=>speak(phrases[+b.dataset.listen].en));document.querySelectorAll("[data-listenta]").forEach(b=>b.onclick=()=>speak(phrases[+b.dataset.listenta].ta,true));document.querySelectorAll("[data-practice]").forEach(b=>b.onclick=()=>{practiced.add(+b.dataset.practice);save();updateProgress()})}
-function speak(text,tamil=false){if(!("speechSynthesis"in window)){alert("This browser does not support built-in speech. Try an updated Chrome or Edge.");return}window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);const voices=window.speechSynthesis.getVoices();if(tamil){const v=voices.find(v=>/^ta([-_]|$)/i.test(v.lang)||/tamil/i.test(v.name));if(v){u.voice=v;u.lang=v.lang}else{alert("இந்த browser/device-ல் Tamil voice கிடைக்கவில்லை. Device/browser Tamil text-to-speech voice கிடைத்தால் audio வேலை செய்யும்.");return}}else{const chosen=$("voiceSelect").value;const v=voices.find(v=>v.name===chosen);if(v)u.voice=v;u.lang=v?.lang||"en-US";u.rate=.88}window.speechSynthesis.speak(u)}
-function fillVoices(){const sel=$("voiceSelect"),old=sel.value;const vs=window.speechSynthesis?window.speechSynthesis.getVoices():[];const en=vs.filter(v=>/^en([-_]|$)/i.test(v.lang));sel.innerHTML='<option value="">Default English voice</option>'+en.map(v=>`<option value="${v.name.replace(/"/g,"&quot;")}">${v.name} — ${v.lang}</option>`).join("");if(old)sel.value=old}
-function showRepeat(){const p=phrases[repeatIndex];$("repeatStep").textContent=`Sentence ${repeatIndex+1} of ${phrases.length}`;$("repeatSentence").textContent=p.en;$("repeatTamil").textContent=p.ta}
-$("startRepeat").onclick=()=>{repeatIndex=0;showRepeat();speak(phrases[0].en)};
-$("repeatAgain").onclick=()=>speak(phrases[repeatIndex].en);
-$("listenCurrent").onclick=()=>speak(phrases[repeatIndex].en);
-$("nextRepeat").onclick=()=>{practiced.add(repeatIndex);if(repeatIndex<phrases.length-1){repeatIndex++;showRepeat();speak(phrases[repeatIndex].en)}else{$("repeatStep").textContent="Guided practice finished — great work!";save();updateProgress()}};
+function renderModules(target){$(target).innerHTML=modules.map(m=>`<article class="module-card"><div class="module-top"><div class="module-icon ${m.tone}">${m.icon}</div><span class="module-no">${m.n}</span></div><h3>${m.title}</h3><p>${m.desc}</p><div class="module-foot"><span class="badge ${m.status==='soon'?'soon':''}">${m.label}</span>${m.status==='available'?'<button onclick="openForModule('+m.n+')">Explore ↗</button>':'<span>Course roadmap</span>'}</div></article>`).join("")}
+function openForModule(n){showView(n==="01"?"lesson":"practice")}
+function showView(v){document.querySelectorAll(".view").forEach(el=>el.classList.remove("active"));$("view-"+v).classList.add("active");document.querySelectorAll(".nav-item").forEach(b=>b.classList.toggle("active",b.dataset.view===v));window.scrollTo({top:0,behavior:"smooth"})}
+document.querySelectorAll(".nav-item").forEach(b=>b.addEventListener("click",()=>showView(b.dataset.view)));
+function renderPhrases(){ $("lessonPhrases").innerHTML=phrases.map((p,i)=>`<article class="soft-card"><div class="phrase-tag">${String(i+1).padStart(2,"0")} · ${p.tag}</div><div class="phrase-en">${p.en}</div><div class="phrase-ta" lang="ta">${p.ta}</div><div class="button-row"><button class="btn purple" onclick="speak(phrases[${i}].en)">♫ Listen in English</button><button class="btn" onclick="speak(phrases[${i}].ta,true)">தமிழ் விளக்கம் கேள்</button><button class="btn" onclick="markPhrase(${i})">✓ I repeated it</button></div></article>`).join("")}
+function renderQuiz(){ $("quizQuestions").innerHTML=quiz.map((q,i)=>`<div class="quiz-question"><strong>${i+1}. ${q.q}</strong><div class="quiz-options">${q.opts.map((o,j)=>`<label class="quiz-option"><input type="radio" name="q${i}" value="${j}"><span>${o}</span></label>`).join("")}</div><div class="feedback" id="feed${i}"></div></div>`).join("")}
+let practiceIndex=0, practiced=new Set(), roleplayDone=false, lessonDone=false;
+const storeKey="tem_premium_progress_v1";
+function showPractice(){const p=phrases[practiceIndex];$("practiceCount").textContent=`SENTENCE ${practiceIndex+1} OF ${phrases.length}`;$("practiceEn").textContent=p.en;$("practiceTa").textContent=p.ta;$("practiceStatus").textContent=practiced.has(practiceIndex)?"✓ You marked this phrase as practised.":"Step 1: Listen and notice the rhythm."}
+$("nextPractice").onclick=()=>{practiced.add(practiceIndex);if(practiceIndex<phrases.length-1)practiceIndex++;else {toast("Great work — you practised all three phrases.");practiceIndex=0}saveProgress();showPractice();updateProgress()};
+$("prevPractice").onclick=()=>{practiceIndex=Math.max(0,practiceIndex-1);showPractice()};
+$("repeatPractice").onclick=()=>speak(phrases[practiceIndex].en);
+$("markRoleplay").onclick=()=>{roleplayDone=true;$("markRoleplay").textContent="✓ Role-play practised";saveProgress();updateProgress();toast("Role-play progress saved in this browser.")};
+function markPhrase(i){practiced.add(i);saveProgress();updateProgress();toast("Phrase marked as practised.")}
+function speak(text,tamil=false){if(!("speechSynthesis"in window)){toast("Text-to-speech is unavailable in this browser. Try an updated Chrome or Edge.");return}window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);const voices=window.speechSynthesis.getVoices();if(tamil){const v=voices.find(v=>/^ta([-_]|$)/i.test(v.lang)||/tamil/i.test(v.name));if(!v){toast("Tamil speech voice not found on this device. Try installing/enabling a Tamil voice in device settings.");return}u.voice=v;u.lang=v.lang}else{const chosen=$("voiceSelect").value;const v=voices.find(v=>v.name===chosen);if(v)u.voice=v;u.lang=v?.lang||"en-US";u.rate=.88}window.speechSynthesis.speak(u)}
+function loadVoices(){if(!window.speechSynthesis)return;const sel=$("voiceSelect"),old=sel.value;const en=speechSynthesis.getVoices().filter(v=>/^en([-_]|$)/i.test(v.lang));sel.innerHTML='<option value="">Default English voice</option>'+en.map(v=>`<option value="${v.name.replace(/&/g,"&amp;").replace(/"/g,"&quot;")}">${v.name} — ${v.lang}</option>`).join("");if(old)sel.value=old}
 $("testEnglish").onclick=()=>speak("Hello. I am practising professional English.");
 $("testTamil").onclick=()=>speak("வணக்கம். இன்று நாம் ஆங்கிலப் பேச்சுப் பயிற்சி செய்வோம்.",true);
-document.querySelectorAll("[data-module]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-module]").forEach(x=>x.classList.remove("module-active"));b.classList.add("module-active");const n=+b.dataset.module;$("moduleIntro").innerHTML=`<div class="eyebrow" style="color:#087e8b">Module ${n+1}</div><h2>${modules[n][0]}</h2><p>${modules[n][1]}</p><div class="notice">Course map selected. Lesson 1 is currently available below; additional module lessons can be published in later updates.</div>`});
-const key="tem_intermediate_progress";
-function save(){localStorage.setItem(key,JSON.stringify({practiced:[...practiced],roleplay:$("markRoleplay").dataset.done==="1",complete:$("markComplete").dataset.done==="1"}))}
-function load(){try{const d=JSON.parse(localStorage.getItem(key)||"{}");practiced=new Set(d.practiced||[]);if(d.roleplay){$("markRoleplay").dataset.done="1";$("markRoleplay").textContent="Role-play practised ✓"}if(d.complete){$("markComplete").dataset.done="1";$("markComplete").textContent="Lesson marked complete ✓"}}catch(e){}updateProgress()}
-function updateProgress(){let count=practiced.size+( $("markRoleplay").dataset.done==="1"?1:0)+($("markComplete").dataset.done==="1"?1:0);let pct=Math.round(count/5*100);$("pct").textContent=pct+"%";$("bar").style.width=pct+"%";$("progressText").textContent=`${count} of 5 practice milestones completed.`}
-$("markRoleplay").onclick=()=>{$("markRoleplay").dataset.done="1";$("markRoleplay").textContent="Role-play practised ✓";save();updateProgress()};
-$("markComplete").onclick=()=>{$("markComplete").dataset.done="1";$("markComplete").textContent="Lesson marked complete ✓";save();updateProgress()};
-$("resetProgress").onclick=()=>{if(confirm("Reset saved Lesson 1 practice progress on this browser?")){localStorage.removeItem(key);practiced=new Set();$("markRoleplay").dataset.done="0";$("markRoleplay").textContent="I practised the answer";$("markComplete").dataset.done="0";$("markComplete").textContent="Mark lesson practice complete";updateProgress()}};
-const answers={q1:"b",q2:"c",q3:"a",q4:"true",q5:"false"};
-const explanations={q1:"Use “focus on + verb-ing”: focus on solving.",q2:"This gives an update without promising an unconfirmed delivery time.",q3:"The natural collocation is “experience in” a field.",q4:"“Resolving” is the -ing form following the preposition “on”.",q5:"It promises communication about delays, not a specific completion time."};
-$("quiz").onsubmit=e=>{e.preventDefault();let score=0;for(let i=1;i<=5;i++){let q="q"+i,sel=document.querySelector(`input[name="${q}"]:checked`);let ok=!!sel&&sel.value===answers[q];if(ok)score++;$("f"+i).textContent=(ok?"✓ ":"✗ ")+explanations[q];$("f"+i).style.color=ok?"#087e52":"#a44325"}$("score").textContent=`Your score: ${score}/5. ${score>=4?"Strong work — practise the phrases aloud once more.":"Review the explanations, then try again."}`;if(score===5){practiced.add(0);practiced.add(1);practiced.add(2);save();updateProgress()}};
-$("clearQuiz").onclick=()=>{$("quiz").reset();for(let i=1;i<=5;i++)$("f"+i).textContent="";$("score").textContent=""};
-renderPhrases();showRepeat();load();fillVoices();if(window.speechSynthesis)window.speechSynthesis.onvoiceschanged=fillVoices;
+$("quizForm").addEventListener("submit",e=>{e.preventDefault();let score=0;quiz.forEach((q,i)=>{const v=document.querySelector(`input[name="q${i}"]:checked`);const ok=v&&Number(v.value)===q.a;if(ok)score++;const f=$("feed"+i);f.textContent=(ok?"✓ ":"↳ ")+q.why;f.style.color=ok?"#15815e":"#9c5630"});$("quizScore").textContent=`Your score: ${score}/${quiz.length} ${score===5?"— excellent work!":score>=3?"— good progress; review and repeat.":"— review the explanations and try again."}`;if(score===5){lessonDone=true;saveProgress();updateProgress()}});
+$("tryAgain").onclick=()=>{$("quizForm").reset();quiz.forEach((q,i)=>$("feed"+i).textContent="");$("quizScore").textContent=""};
+function saveProgress(){try{localStorage.setItem(storeKey,JSON.stringify({practiced:[...practiced],roleplayDone,lessonDone}))}catch(e){}}
+function loadProgress(){try{const d=JSON.parse(localStorage.getItem(storeKey)||"{}");practiced=new Set(d.practiced||[]);roleplayDone=!!d.roleplayDone;lessonDone=!!d.lessonDone;if(roleplayDone)$("markRoleplay").textContent="✓ Role-play practised"}catch(e){}updateProgress()}
+function updateProgress(){let done=practiced.size+(roleplayDone?1:0)+(lessonDone?1:0);let pct=Math.round(done/5*100);$("statPractice").textContent=pct+"%"}
+function toast(msg){const t=$("toast");t.textContent=msg;t.classList.add("show");clearTimeout(window._toastTimer);window._toastTimer=setTimeout(()=>t.classList.remove("show"),3000)}
+renderModules("moduleGrid");renderModules("courseGrid");renderPhrases();renderQuiz();showPractice();loadProgress();loadVoices();$("year").textContent=new Date().getFullYear();if(window.speechSynthesis)window.speechSynthesis.onvoiceschanged=loadVoices;
 if("serviceWorker"in navigator && location.protocol.startsWith("http"))window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
 </script>
-</body></html>
+</body>
+</html>

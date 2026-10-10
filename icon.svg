@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="120" fill="#0f766e"/><path d="M96 125h320a30 30 0 0 1 30 30v190a30 30 0 0 1-30 30H260l-78 62v-62H96a30 30 0 0 1-30-30V155a30 30 0 0 1 30-30" fill="#fff"/><text x="256" y="260" font-family="Arial,sans-serif" font-size="108" font-weight="800" text-anchor="middle" fill="#0f766e">TE</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#887dff"/><stop offset="1" stop-color="#5145ca"/></linearGradient></defs>
+<rect width="128" height="128" rx="32" fill="#11142b"/><rect x="13" y="13" width="102" height="102" rx="27" fill="url(#g)"/>
+<text x="64" y="80" font-size="57" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" fill="white">த</text>
+<circle cx="99" cy="30" r="7" fill="#f3c96b"/>
+</svg>

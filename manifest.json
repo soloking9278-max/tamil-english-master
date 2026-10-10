@@ -1,10 +1,13 @@
 {
   "name": "Tamil English Master",
   "short_name": "Tamil English",
-  "description": "Intermediate English practice with Tamil explanations",
+  "description": "Free public intermediate English learning with Tamil support",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#f4f7f9",
-  "theme_color": "#123a52",
-  "icons": []
+  "background_color": "#f5f6fb",
+  "theme_color": "#11142b",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
 }
