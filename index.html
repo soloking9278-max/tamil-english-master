@@ -1,82 +1,169 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0f766e">
-<meta name="description" content="Learn spoken English through simple Tamil explanations, audio, speaking practice and quizzes.">
-<link rel="manifest" href="manifest.webmanifest">
-<title>Tamil English Master</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#123a52">
+<title>Tamil English Master — Intermediate</title>
+<link rel="manifest" href="manifest.json">
 <style>
-:root{--ink:#132238;--muted:#617085;--brand:#0f766e;--brand2:#115e59;--paper:#f4f8f7;--card:#fff;--line:#dce7e4;--gold:#f4b942;--bad:#b42318;--good:#067647}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
-button,input{font:inherit}button{cursor:pointer}.app{max-width:1050px;margin:auto;padding:0 16px 40px}
-header{background:linear-gradient(130deg,#0f766e,#164e63);color:white;padding:22px 0 25px;border-radius:0 0 24px 24px}
-.head-inner{max-width:1050px;margin:auto;padding:0 18px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:15px;background:#fff;color:var(--brand);display:grid;place-items:center;font-weight:900;font-size:20px}.brand h1{font-size:clamp(20px,4vw,28px);margin:0}.brand p{margin:2px 0 0;color:#d7f3ee;font-size:13px}.pill{border:1px solid #ffffff60;border-radius:999px;padding:7px 11px;font-size:12px;white-space:nowrap}
-.hero{padding:22px 0 10px}.hero h2{font-size:clamp(24px,5vw,36px);line-height:1.15;margin:0 0 9px}.hero p{color:var(--muted);margin:0;max-width:650px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}.stat,.panel,.lesson-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:15px}.stat strong{display:block;font-size:22px;color:var(--brand)}.stat span{font-size:12px;color:var(--muted)}
-.tabs{display:flex;gap:8px;overflow:auto;padding:5px 0 13px}.tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 15px;color:var(--ink);white-space:nowrap}.tab.active{background:var(--brand);border-color:var(--brand);color:#fff}
-.layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:16px;align-items:start}.section-title{font-size:18px;margin:0 0 12px}.lesson-list{display:grid;gap:9px}.lesson-btn{display:flex;align-items:center;gap:11px;text-align:left;width:100%;padding:12px;border:1px solid var(--line);background:white;border-radius:14px;color:var(--ink)}.lesson-btn.active{border:2px solid var(--brand);padding:11px;background:#f0fdfa}.lesson-num{width:37px;height:37px;border-radius:12px;background:#e0f2f1;display:grid;place-items:center;color:var(--brand);font-weight:800;flex-shrink:0}.lesson-btn small{display:block;color:var(--muted);font-size:12px}.done{margin-left:auto;color:var(--good);font-weight:700}
-.content{min-width:0}.panel{margin-bottom:14px}.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:11px;color:var(--brand);font-weight:800}.content h2{margin:4px 0 6px;font-size:26px;line-height:1.2}.muted{color:var(--muted)}.sentence{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:14px;padding:13px;margin:10px 0;background:#fff}.sentence strong{display:block;font-size:18px}.sentence p{margin:3px 0 0;color:var(--muted);font-size:14px}.audio{border:0;background:#e0f2f1;color:var(--brand2);border-radius:12px;padding:10px 12px;font-weight:700;white-space:nowrap}.repeat-btn{border:0;background:#fff1d6;color:#754c00;border-radius:12px;padding:10px 12px;font-weight:750;white-space:nowrap}.sentence-actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.btn{border:0;background:var(--brand);color:white;border-radius:12px;padding:12px 15px;font-weight:750}.btn:hover{background:var(--brand2)}.btn.secondary{background:#e8f1ef;color:var(--brand2)}.btn.outline{background:white;color:var(--brand);border:1px solid var(--brand)}.btn:disabled{opacity:.45;cursor:not-allowed}.row{display:flex;flex-wrap:wrap;gap:9px;align-items:center}.tip{border-left:4px solid var(--gold);background:#fff8e5;padding:12px 14px;border-radius:8px;margin:12px 0}.conversation{display:grid;gap:10px}.bubble{padding:12px 14px;border-radius:15px;background:#edf6f4;max-width:92%}.bubble.right{margin-left:auto;background:#eaf1ff}.bubble strong{display:block}.bubble small{color:var(--muted)}.question{padding:13px 0;border-bottom:1px solid var(--line)}.question:last-child{border-bottom:0}.options{display:grid;gap:7px;margin-top:9px}.option{border:1px solid var(--line);border-radius:10px;padding:10px;background:white;text-align:left}.option.selected{border-color:var(--brand);background:#e6fffb}.feedback{font-weight:700;margin-top:8px}.good{color:var(--good)}.bad{color:var(--bad)}.record-box{background:#f5f9ff;border:1px dashed #9cb7d9;border-radius:14px;padding:14px}.recording{color:var(--bad);font-weight:800}.locked{text-align:center;padding:24px 10px}.lock-icon{font-size:38px}.progress{height:8px;background:#e5eeeb;border-radius:99px;overflow:hidden;margin:9px 0}.progress div{height:100%;background:var(--brand);width:0%;transition:width .2s}.footer{text-align:center;color:var(--muted);font-size:12px;padding:20px 0}.hidden{display:none!important}
-@media(max-width:760px){.layout{grid-template-columns:1fr}.lesson-list{grid-template-columns:repeat(2,minmax(0,1fr))}.lesson-btn{padding:9px;gap:8px}.lesson-btn.active{padding:8px}.lesson-num{width:32px;height:32px}.stats{gap:7px}.stat{padding:11px}.stat strong{font-size:19px}.pill{display:none}.content h2{font-size:23px}}
-@media(max-width:420px){.lesson-list{grid-template-columns:1fr}.sentence{align-items:flex-start}.sentence strong{font-size:16px}.audio{padding:9px}}
+:root{--navy:#123a52;--teal:#087e8b;--gold:#f2b84b;--paper:#f4f7f9;--ink:#172b3a;--muted:#607583;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+header{background:linear-gradient(130deg,#123a52,#087e8b);color:white;padding:26px 18px 22px}
+.wrap{max-width:1050px;margin:auto;padding:0 16px}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.76rem;font-weight:800;color:#cdeff1}
+h1{font-size:clamp(1.8rem,5vw,2.7rem);line-height:1.1;margin:7px 0}header p{max-width:700px;margin:10px 0 0;color:#e4f5f7}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.pill{border:1px solid #ffffff66;border-radius:99px;padding:4px 10px;font-size:.83rem}
+main{padding:20px 0 40px}.layout{display:grid;grid-template-columns:250px 1fr;gap:18px;align-items:start}
+.card{background:white;border:1px solid #dce6eb;border-radius:16px;padding:18px;box-shadow:0 4px 18px #123a520a;margin-bottom:16px}
+h2{font-size:1.25rem;margin:0 0 10px}h3{font-size:1.03rem;margin:0 0 8px}
+.small{font-size:.9rem;color:var(--muted)}.modules button{display:block;width:100%;text-align:left;margin:7px 0;background:#f3f7f9;color:var(--ink);border:1px solid #dbe6eb}
+button,select{font:inherit;border-radius:10px;padding:10px 12px;border:1px solid #c9d8df;background:white;color:var(--ink)}
+button{cursor:pointer;font-weight:700}button.primary{background:var(--teal);color:white;border-color:var(--teal)}button.gold{background:#fff4d7;border-color:#f1d28a}
+button:focus-visible,select:focus-visible{outline:3px solid #f2b84b;outline-offset:2px}
+.module-active{border-color:var(--teal)!important;background:#e6f6f6!important}
+.phrase{border:1px solid #e0e9ed;border-radius:13px;padding:14px;margin:10px 0;background:#fbfdfe}
+.english{font-size:1.15rem;font-weight:800;color:#123a52}.tamil{margin-top:4px}.meta{font-size:.82rem;color:var(--muted);margin-top:5px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.step{display:flex;gap:10px;margin:10px 0}.num{background:#e0f3f3;color:#075a64;border-radius:9px;padding:3px 9px;font-weight:800;height:max-content}
+.progress{height:9px;background:#e5edf0;border-radius:99px;overflow:hidden}.progress div{height:100%;background:var(--teal);width:0;transition:width .2s}
+.quizq{padding:14px 0;border-bottom:1px solid #e5ecef}.quizq:last-child{border-bottom:0}.options{display:grid;gap:7px;margin-top:8px}.options label{padding:9px 11px;border:1px solid #d8e4e9;border-radius:10px;cursor:pointer}.feedback{margin-top:8px;font-weight:700}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:15px}
+.notice{background:#fff6df;border:1px solid #f0d48e;border-radius:12px;padding:12px}
+@media(max-width:760px){.layout{grid-template-columns:1fr}.modules{display:grid;grid-template-columns:1fr 1fr;gap:5px}.modules button{margin:0}.card{padding:15px}}
 </style>
 </head>
 <body>
-<header><div class="head-inner"><div class="brand"><div class="logo">TE</div><div><h1>Tamil English Master</h1><p>தமிழில் கற்று · English-ல் பேசு</p></div></div><div class="pill">BEGINNER • DAY 1</div></div></header>
-<div class="app">
-<section class="hero"><h2>Small steps. Real English. 💬</h2><p>தமிழில் புரிந்துகொண்டு, English sentence-களை கேட்டு, சத்தமாகப் பேசி, quiz மூலம் பயிற்சி செய்.</p><p id="voiceStatus" class="muted" style="font-size:13px;margin-top:8px">🔊 English female voice preferred when available. Use “Tamil → English Repeat” to hear Tamil meaning, then English twice and practise aloud.</p></section>
-<div class="stats"><div class="stat"><strong id="statDone">0/5</strong><span>Lessons completed</span></div><div class="stat"><strong id="statScore">0%</strong><span>Quiz accuracy</span></div><div class="stat"><strong id="statStreak">1 day</strong><span>Your learning journey</span></div></div>
-<div class="tabs"><button class="tab active" data-view="learn">📚 Lessons</button><button class="tab" data-view="practice">🎙️ Speaking practice</button><button class="tab" data-view="quiz">🧠 Quiz</button><button class="tab" data-view="advanced">⭐ Advanced course</button></div>
+<header><div class="wrap">
+<div class="eyebrow">Tamil support • Practical spoken English</div>
+<h1>Tamil English Master</h1>
+<p>Intermediate track — build confident workplace English, automotive customer communication, GCC interviews and everyday fluency.</p>
+<div class="pills"><span class="pill">Intermediate</span><span class="pill">Tamil explanations</span><span class="pill">English listening</span><span class="pill">Repeat-after-me</span></div>
+</div></header>
+<main class="wrap">
 <div class="layout">
-<aside><div class="panel"><h3 class="section-title">Free beginner lessons</h3><div class="progress"><div id="progressBar"></div></div><div id="lessonList" class="lesson-list"></div></div><div class="panel"><h3 class="section-title">Daily habit</h3><p class="muted" style="margin:0">ஒவ்வொரு நாளும் 5–10 நிமிடம் பயிற்சி செய். ஒவ்வொரு sentence-ஐயும் குறைந்தது 3 முறை சத்தமாகச் சொல்.</p></div></aside>
-<main class="content">
-<section id="learnView" class="panel"></section>
-<section id="practiceView" class="panel hidden"></section>
-<section id="quizView" class="panel hidden"></section>
-<section id="advancedView" class="panel hidden"></section>
-</main>
+<aside>
+<section class="card">
+<h2>Your progress</h2><div class="row" style="justify-content:space-between"><span class="small">Lesson 1 practice</span><strong id="pct">0%</strong></div>
+<div class="progress" aria-label="Lesson practice progress"><div id="bar"></div></div>
+<p class="small" id="progressText">Complete the practice steps to build your routine.</p>
+<button class="primary" id="resetProgress">Reset lesson progress</button>
+</section>
+<section class="card">
+<h2>Course modules</h2><p class="small">Choose a track. Lessons will be added in sequence.</p>
+<div class="modules" id="modules">
+<button class="module-active" data-module="0">1. Fluent Conversation</button>
+<button data-module="1">2. Professional English</button>
+<button data-module="2">3. Automotive English</button>
+<button data-module="3">4. GCC Interviews</button>
+<button data-module="4">5. Fluency Studio</button>
 </div>
-<div class="footer">Tamil English Master • Prototype v1 • Progress is saved on this device.</div>
-</div>
+</section>
+<section class="card">
+<h3>Voice settings</h3><label class="small" for="voiceSelect">English voice</label><br>
+<select id="voiceSelect" style="width:100%;margin:6px 0 10px"><option value="">Default English voice</option></select>
+<div class="row"><button id="testEnglish">Test English voice</button><button id="testTamil">Test Tamil voice</button></div>
+<p class="small">Voice options depend on your browser and device. Tamil audio requires a Tamil voice installed or provided by the browser.</p>
+</section>
+</aside>
+<div>
+<section class="card" id="moduleIntro">
+<div class="eyebrow" style="color:#087e8b">Module 1 • Lesson 1</div>
+<h2>Sound professional without sounding complicated</h2>
+<p>இது absolute beginner lesson இல்லை. ஏற்கனவே basic English தெரியும் என்று வைத்து, natural sentence patterns, workplace confidence, clear pronunciation ஆகியவற்றில் பயிற்சி செய்வோம்.</p>
+<div class="notice"><strong>Today's target:</strong> introduce your experience, explain your work approach, and update a customer about a delay.</div>
+</section>
+<section class="card">
+<h2>1. Learn the phrases</h2>
+<p class="small">முதலில் Tamil meaning பாருங்கள். பிறகு English audio கேட்டு, sentence-ஐ சத்தமாகச் சொல்லுங்கள்.</p>
+<div id="phrases"></div>
+</section>
+<section class="card">
+<h2>2. Repeat-after-me studio</h2>
+<p>ஒவ்வொரு sentence-க்கும்: <strong>Listen → Pause → Speak → Repeat</strong>. கீழே உள்ள buttons மூலம் ஒவ்வொரு கட்டத்தையும் practice செய்யலாம்.</p>
+<div class="row"><button class="primary" id="startRepeat">Start guided practice</button><button id="repeatAgain">Repeat current sentence</button></div>
+<div class="phrase"><div class="meta" id="repeatStep">Ready when you are</div><div class="english" id="repeatSentence">I have extensive experience in the automotive industry.</div><div class="tamil" id="repeatTamil">ஆட்டோமொபைல் துறையில் எனக்கு விரிவான அனுபவம் உள்ளது.</div><div class="actions"><button class="gold" id="listenCurrent">Listen</button><button id="nextRepeat">I repeated it — next</button></div></div>
+<p class="small">Tip: copy the rhythm, not just each word. Start slowly, then say it at normal speed.</p>
+</section>
+<section class="card">
+<h2>3. Grammar that matters</h2>
+<h3>focus on + verb-ing</h3>
+<p><strong>Natural:</strong> “I focus on solving customer issues.”</p>
+<p><strong>Avoid:</strong> “I focus to solving customer issues.”</p>
+<p class="tamil">“on” ஒரு preposition. அதற்குப் பிறகு action சொல்லும்போது பொதுவாக verb + ing பயன்படுத்துவோம்: solving, improving, coordinating.</p>
+<div class="phrase"><div class="english">I have extensive experience in the automotive industry.</div><div class="tamil">“experience in” = ஒரு துறையில் அனுபவம்.</div><button class="gold" onclick="speak('I have extensive experience in the automotive industry.')">Listen</button></div>
+</section>
+<section class="card">
+<h2>4. Role-play: GCC job interview</h2>
+<p class="small">Interviewer கேட்கிறார்:</p><div class="phrase"><div class="english">“Could you tell me about your professional experience?”</div><button class="gold" onclick="speak('Could you tell me about your professional experience?')">Listen to interviewer</button></div>
+<p><strong>Model answer:</strong></p><div class="phrase"><div class="english" id="modelAnswer">I have extensive experience in the automotive industry. My background includes customer service, workshop coordination and inventory management. I focus on solving problems efficiently and keeping customers informed.</div><div class="tamil">ஆட்டோமொபைல் துறையில் எனக்கு விரிவான அனுபவம் உள்ளது. Customer service, workshop coordination, inventory management ஆகியவற்றில் அனுபவம் உள்ளது. பிரச்சினைகளைத் திறமையாகத் தீர்த்து, வாடிக்கையாளர்களுக்குத் தொடர்ந்து தகவல் தெரிவிப்பதில் கவனம் செலுத்துகிறேன்.</div><div class="actions"><button class="gold" onclick="speak(document.getElementById('modelAnswer').innerText)">Listen to model answer</button><button id="markRoleplay">I practised the answer</button></div></div>
+<p class="small">Now try saying the answer without reading. You can use your device’s voice typing separately to check what it recognises; this page does not record or upload your voice.</p>
+</section>
+<section class="card">
+<h2>5. Lesson 1 quiz</h2>
+<p class="small">Choose the best answer. You’ll get feedback after checking.</p>
+<form id="quiz">
+<div class="quizq"><strong>1. Choose the natural sentence.</strong><div class="options">
+<label><input type="radio" name="q1" value="a"> I focus to solving customer issues.</label>
+<label><input type="radio" name="q1" value="b"> I focus on solving customer issues.</label>
+<label><input type="radio" name="q1" value="c"> I focus solving on customer issues.</label></div><div class="feedback" id="f1"></div></div>
+<div class="quizq"><strong>2. A spare part is delayed. What is a professional update?</strong><div class="options">
+<label><input type="radio" name="q2" value="a"> It will definitely arrive in one hour.</label>
+<label><input type="radio" name="q2" value="b"> I don't know. Call later.</label>
+<label><input type="radio" name="q2" value="c"> I will keep you informed of any delays.</label></div><div class="feedback" id="f2"></div></div>
+<div class="quizq"><strong>3. Complete the sentence: “I have extensive experience ___ the automotive industry.”</strong><div class="options">
+<label><input type="radio" name="q3" value="a"> in</label><label><input type="radio" name="q3" value="b"> on</label><label><input type="radio" name="q3" value="c"> at</label></div><div class="feedback" id="f3"></div></div>
+<div class="quizq"><strong>4. “I focus on resolving customer issues.” In this sentence, “resolving” follows the preposition “on”.</strong><div class="options"><label><input type="radio" name="q4" value="true"> True</label><label><input type="radio" name="q4" value="false"> False</label></div><div class="feedback" id="f4"></div></div>
+<div class="quizq"><strong>5. “I will keep you informed of any delays” guarantees a specific completion time.</strong><div class="options"><label><input type="radio" name="q5" value="true"> True</label><label><input type="radio" name="q5" value="false"> False</label></div><div class="feedback" id="f5"></div></div>
+<div class="actions"><button class="primary" type="submit">Check my answers</button><button type="button" id="clearQuiz">Try again</button></div>
+<div id="score" aria-live="polite" style="margin-top:12px;font-weight:800"></div>
+</form>
+</section>
+<section class="card"><h2>Daily 10-minute routine</h2>
+<div class="step"><span class="num">1</span><div><strong>2 minutes</strong><br>Listen to each phrase and understand the Tamil meaning.</div></div>
+<div class="step"><span class="num">2</span><div><strong>3 minutes</strong><br>Repeat every phrase three times: slow, normal, confident.</div></div>
+<div class="step"><span class="num">3</span><div><strong>3 minutes</strong><br>Speak the interview answer without looking at the screen.</div></div>
+<div class="step"><span class="num">4</span><div><strong>2 minutes</strong><br>Complete the quiz and reuse one phrase at work today.</div></div>
+<button class="primary" id="markComplete">Mark lesson practice complete</button>
+</section>
+</div></div></main>
+<footer>Tamil English Master • Intermediate learning track • Progress is saved only in this browser.</footer>
 <script>
-const lessons = [
- {id:1,title:"Greetings & Introduction",subtitle:"வணக்கம் சொல்லி அறிமுகப்படுத்துவது",goal:"Hello சொல்லவும், உங்கள் பெயரை அறிமுகப்படுத்தவும் கற்றுக்கொள்.",items:[
-  ["Hello!","வணக்கம்!"],["Good morning!","காலை வணக்கம்!"],["How are you?","நீங்கள் எப்படி இருக்கிறீர்கள்?"],["I am fine, thank you.","நான் நன்றாக இருக்கிறேன், நன்றி."],["What is your name?","உங்கள் பெயர் என்ன?"],["My name is Sathish.","என் பெயர் சதீஷ்."],["Nice to meet you.","உங்களைச் சந்தித்ததில் மகிழ்ச்சி."]
- ],tip:"My = என்னுடைய • Name = பெயர் • Is = இருக்கிறது. பெயரை மாற்றி “My name is ____.” என்று சொல்லலாம்.",conversation:[["A","Hello! Good morning.","வணக்கம்! காலை வணக்கம்."],["B","Good morning! How are you?","காலை வணக்கம்! எப்படி இருக்கிறீர்கள்?"],["A","I am fine, thank you. What is your name?","நான் நன்றாக இருக்கிறேன், நன்றி. உங்கள் பெயர் என்ன?"],["B","My name is Sathish. Nice to meet you.","என் பெயர் சதீஷ். உங்களைச் சந்தித்ததில் மகிழ்ச்சி."]],quiz:[
-  {q:"“என் பெயர் சதீஷ்” என்பதற்கு சரியானது எது?",opts:["My name Sathish.","My name is Sathish.","I name is Sathish."],a:1,why:"My name is + பெயர்."},
-  {q:"“நீங்கள் எப்படி இருக்கிறீர்கள்?”",opts:["How are you?","What your name?","I am fine."],a:0,why:"How are you? என்பது நலம் விசாரிக்கும் கேள்வி."},
-  {q:"“நான் நன்றாக இருக்கிறேன்.”",opts:["I fine am.","My name is fine.","I am fine."],a:2,why:"I am fine என்பது சரியான sentence."}
- ]},
- {id:2,title:"I, You, He, She",subtitle:"நான், நீ, அவன், அவள்",goal:"எளிய pronouns-ஐ அடையாளம் கண்டு வாக்கியங்களில் பயன்படுத்து.",items:[["I am Sathish.","நான் சதீஷ்."],["You are my friend.","நீ என் நண்பன் / நண்பி."],["He is a teacher.","அவர் ஒரு ஆசிரியர் (ஆண்)."],["She is a doctor.","அவர் ஒரு மருத்துவர் (பெண்)."],["We are ready.","நாங்கள் தயாராக இருக்கிறோம்."],["They are happy.","அவர்கள் மகிழ்ச்சியாக இருக்கிறார்கள்."]],tip:"I → am; You / We / They → are; He / She / It → is.",conversation:[["A","Who is he?","அவர் யார்?"],["B","He is my friend.","அவர் என் நண்பர்."],["A","Who is she?","அவர் யார்?"],["B","She is my teacher.","அவர் என் ஆசிரியர்."]],quiz:[{q:"I ___ ready.",opts:["is","am","are"],a:1,why:"I உடன் am பயன்படுத்த வேண்டும்."},{q:"She ___ a doctor.",opts:["am","are","is"],a:2,why:"She உடன் is."},{q:"They ___ happy.",opts:["are","is","am"],a:0,why:"They உடன் are."}]},
- {id:3,title:"Everyday Actions",subtitle:"தினசரி செயல்கள்",goal:"நீங்கள் தினமும் செய்வதை எளிய present tense-ல் சொல்லுங்கள்.",items:[["I work every day.","நான் தினமும் வேலை செய்கிறேன்."],["I drink water.","நான் தண்ணீர் குடிக்கிறேன்."],["I eat breakfast.","நான் காலை உணவு சாப்பிடுகிறேன்."],["I go to work.","நான் வேலைக்குச் செல்கிறேன்."],["I speak Tamil.","நான் தமிழ் பேசுகிறேன்."],["I am learning English.","நான் ஆங்கிலம் கற்றுக்கொண்டிருக்கிறேன்."]],tip:"I + action word: I work. I eat. I speak. “I am learning” என்பது இப்போது நடந்து கொண்டிருக்கும் செயல்.",conversation:[["A","What do you do every day?","நீ தினமும் என்ன செய்கிறாய்?"],["B","I go to work.","நான் வேலைக்குச் செல்கிறேன்."],["A","What language do you speak?","நீ எந்த மொழி பேசுகிறாய்?"],["B","I speak Tamil and I am learning English.","நான் தமிழ் பேசுகிறேன்; ஆங்கிலம் கற்றுக்கொள்கிறேன்."]],quiz:[{q:"“நான் தண்ணீர் குடிக்கிறேன்.”",opts:["I drink water.","I water drink.","I am water."],a:0,why:"I + drink + water."},{q:"I ___ to work.",opts:["go","goes","going"],a:0,why:"I உடன் பொதுவாக go."},{q:"“நான் ஆங்கிலம் கற்றுக்கொண்டிருக்கிறேன்.”",opts:["I learn English yesterday.","I am learning English.","I English am."],a:1,why:"தற்போது நடக்கும் செயல்: am learning."}]},
- {id:4,title:"Simple Questions",subtitle:"எளிய கேள்விகள்",goal:"What, Where, When போன்ற கேள்விகளை அறிந்துகொள்.",items:[["What is this?","இது என்ன?"],["Where are you from?","நீங்கள் எங்கிருந்து வருகிறீர்கள்?"],["Where do you work?","நீங்கள் எங்கே வேலை செய்கிறீர்கள்?"],["When do you start?","நீங்கள் எப்போது தொடங்குகிறீர்கள்?"],["Can you help me?","நீங்கள் எனக்கு உதவ முடியுமா?"],["Could you repeat that, please?","தயவுசெய்து அதை மீண்டும் சொல்ல முடியுமா?"]],tip:"What = என்ன • Where = எங்கே • When = எப்போது • Can you…? = உங்களால் … முடியுமா?",conversation:[["A","Where do you work?","நீங்கள் எங்கே வேலை செய்கிறீர்கள்?"],["B","I work in Oman.","நான் ஓமானில் வேலை செய்கிறேன்."],["A","Can you help me?","நீங்கள் எனக்கு உதவ முடியுமா?"],["B","Yes, of course.","ஆம், நிச்சயமாக."]],quiz:[{q:"“இது என்ன?”",opts:["Where is this?","What is this?","When is this?"],a:1,why:"What = என்ன."},{q:"Where ___ you from?",opts:["is","am","are"],a:2,why:"You உடன் are."},{q:"“மீண்டும் சொல்ல முடியுமா?”",opts:["Could you repeat that?","What your name?","I am repeat."],a:0,why:"Could you repeat that? என்பது மரியாதையான கேள்வி."}]},
- {id:5,title:"Workplace English",subtitle:"வேலை இடத்தில் பேசுவது",goal:"வேலை இடத்தில் பயன்படும் மரியாதையான வாக்கியங்களைப் பழகு.",items:[["Good morning. How can I help you?","காலை வணக்கம். நான் உங்களுக்கு எப்படி உதவலாம்?"],["Please give me a moment.","தயவுசெய்து எனக்கு ஒரு நிமிடம் கொடுங்கள்."],["I will check and update you.","நான் சரிபார்த்து உங்களுக்குத் தகவல் தருகிறேன்."],["Could you please wait?","தயவுசெய்து காத்திருக்க முடியுமா?"],["Thank you for your patience.","பொறுமையாக இருந்ததற்கு நன்றி."],["I will get back to you.","நான் மீண்டும் உங்களைத் தொடர்புகொள்கிறேன்."]],tip:"“Please” மற்றும் “Could you…” பயன்படுத்தினால் கோரிக்கை மரியாதையாக இருக்கும்.",conversation:[["A","Good morning. How can I help you?","காலை வணக்கம். எப்படி உதவலாம்?"],["B","Could you check this, please?","தயவுசெய்து இதைச் சரிபார்க்க முடியுமா?"],["A","Certainly. Please give me a moment.","நிச்சயமாக. ஒரு நிமிடம் கொடுங்கள்."],["A","I will check and update you.","சரிபார்த்து உங்களுக்குத் தகவல் தருகிறேன்."]],quiz:[{q:"“நான் சரிபார்த்து தகவல் தருகிறேன்.”",opts:["I will check and update you.","I check you yesterday.","I am information."],a:0,why:"இது இயல்பான workplace sentence."},{q:"மரியாதையாகக் காத்திருக்கச் சொல்லுவது எது?",opts:["Wait now!","Could you please wait?","You wait me."],a:1,why:"Could you please…? மரியாதையான கோரிக்கை."},{q:"“பொறுமையாக இருந்ததற்கு நன்றி.”",opts:["Thank you for your patience.","Thank you your wait.","You are patience."],a:0,why:"Thank you for your patience."}]}
+const phrases=[
+{en:"I have extensive experience in the automotive industry.",ta:"ஆட்டோமொபைல் துறையில் எனக்கு விரிவான அனுபவம் உள்ளது.",note:"Interview introduction • “experience in”"},
+{en:"I focus on solving customer issues efficiently.",ta:"வாடிக்கையாளர் பிரச்சினைகளைத் திறமையாகத் தீர்ப்பதில் கவனம் செலுத்துகிறேன்.",note:"Grammar: focus on + verb-ing"},
+{en:"I will keep you informed of any delays.",ta:"ஏதேனும் தாமதங்கள் ஏற்பட்டால் உங்களுக்குத் தொடர்ந்து தகவல் தெரிவிப்பேன்.",note:"Customer update • avoids an unconfirmed promise"}
 ];
+const modules=[
+["Fluent Conversation","Natural sentence patterns, explaining opinions, clarifying misunderstandings and keeping a conversation moving."],
+["Professional English","Polite requests, progress updates, reporting problems, email and WhatsApp language."],
+["Automotive English","Customer complaints, diagnosis updates, estimates, warranty explanations, parts delays and workshop coordination."],
+["GCC Interviews","Self-introduction, strengths, experience examples, salary negotiation and confident follow-up questions."],
+["Fluency Studio","Listening and shadowing, pronunciation rhythm, recall drills and timed speaking challenges."]
+];
+let current=0, repeatIndex=0, practiced=new Set();
 const $=id=>document.getElementById(id);
-let state=JSON.parse(localStorage.getItem("temState")||'{"completed":[],"answers":{},"attempts":0,"correct":0}');
-let current=1, view="learn", quizSelections={}, mediaRecorder=null, chunks=[], audioBlob=null;
-function save(){localStorage.setItem("temState",JSON.stringify(state));updateStats()}
-function updateStats(){const done=state.completed.length;$("statDone").textContent=done+"/"+lessons.length;$("statScore").textContent=(state.attempts?Math.round(state.correct/state.attempts*100):0)+"%";$("progressBar").style.width=(done/lessons.length*100)+"%"}
-function renderList(){ $("lessonList").innerHTML=lessons.map(l=>`<button class="lesson-btn ${l.id===current?'active':''}" data-id="${l.id}"><span class="lesson-num">${l.id}</span><span><strong>${l.title}</strong><small>${l.subtitle}</small></span>${state.completed.includes(l.id)?'<span class="done">✓</span>':''}</button>`).join("");document.querySelectorAll(".lesson-btn").forEach(b=>b.onclick=()=>{current=+b.dataset.id;renderList();renderLearn();if(view==="practice")renderPractice()})}
-function pickVoice(lang, hints){const vs=speechSynthesis.getVoices();const candidates=vs.filter(v=>v.lang.toLowerCase().startsWith(lang.toLowerCase()));return candidates.find(v=>hints.test(v.name))||candidates.find(v=>v.lang.toLowerCase()===lang.toLowerCase())||candidates[0]||null}
-function speak(text,lang="en-US",rate=.82){if(!("speechSynthesis" in window)){alert("இந்த browser-ல் text-to-speech கிடைக்கவில்லை. Chrome-ல் முயற்சி செய்யவும்.");return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=rate;const hints=/female|woman|zira|samantha|aria|jenny|sara|ava|emma|libby|sonia|natasha|karen|susan|victoria|moira|tessa|fiona|serena|salli|joanna|kendra|kimberly|ivy|amy|olivia|google us english/i;const v=pickVoice(lang,hints);if(v)u.voice=v;u.onstart=()=>{const st=document.getElementById("voiceStatus");if(st)st.textContent="Voice: "+(v?v.name+" (device voice)":"browser default voice")+" • Audio voice availability depends on your device."};speechSynthesis.speak(u)}
-function repeatTamilEnglish(tamil,english){if(!( "speechSynthesis" in window)){alert("இந்த browser-ல் audio support இல்லை.");return}speechSynthesis.cancel();const tamilVoice=pickVoice("ta-IN",/female|woman|google tamil|tamil/i);const englishVoice=pickVoice("en-US",/female|woman|zira|samantha|aria|jenny|sara|ava|emma|libby|sonia|natasha|karen|susan|victoria|moira|tessa|fiona|serena|salli|joanna|kendra|kimberly|ivy|amy|olivia|google us english/i)||pickVoice("en",/female|woman|zira|samantha|aria|jenny|sara|ava|emma|libby|sonia|natasha|karen|susan|victoria|moira|tessa|fiona|serena|salli|joanna|kendra|kimberly|ivy|amy|olivia/i);const a=new SpeechSynthesisUtterance(tamil);a.lang="ta-IN";a.rate=.84;if(tamilVoice)a.voice=tamilVoice;const b=new SpeechSynthesisUtterance(english);b.lang="en-US";b.rate=.78;if(englishVoice)b.voice=englishVoice;const c=new SpeechSynthesisUtterance(english);c.lang="en-US";c.rate=.78;if(englishVoice)c.voice=englishVoice;a.onend=()=>{setTimeout(()=>speechSynthesis.speak(b),350)};b.onend=()=>{setTimeout(()=>speechSynthesis.speak(c),650)};a.onstart=()=>{const st=document.getElementById("voiceStatus");if(st)st.textContent="Repeat mode: Tamil meaning → English sentence → English repeat. Now say it yourself!"};speechSynthesis.speak(a)}
-function renderLearn(){const l=lessons[current-1];$("learnView").innerHTML=`<div class="eyebrow">LESSON ${l.id} • FREE</div><h2>${l.title}</h2><p class="muted">${l.goal}</p><h3>Listen, understand, and repeat</h3>${l.items.map((it,i)=>`<div class="sentence"><div><strong>${it[0]}</strong><p>${it[1]}</p></div><div class="sentence-actions"><button class="audio" data-say="${encodeURIComponent(it[0])}">🔊 English</button><button class="repeat-btn" data-repeat="${i}">🔁 Tamil → English Repeat</button></div></div>`).join("")}<div class="tip"><strong>💡 Easy Tamil tip</strong><br>${l.tip}</div><h3>Real-life conversation</h3><div class="conversation">${l.conversation.map((c,i)=>`<div class="bubble ${c[0]==='B'?'right':''}"><small>Person ${c[0]}</small><strong>${c[1]}</strong><small>${c[2]}</small><div style="margin-top:7px"><button class="audio" data-say="${encodeURIComponent(c[1])}">🔊 Listen</button></div></div>`).join("")}</div><div class="row" style="margin-top:16px"><button class="btn" id="goPractice">🎙️ Practice speaking</button><button class="btn secondary" id="goQuiz">Take lesson quiz →</button><button class="btn outline" id="markDone">${state.completed.includes(l.id)?"✓ Completed":"Mark lesson complete"}</button></div>`;
-document.querySelectorAll("[data-say]").forEach(b=>b.onclick=()=>speak(decodeURIComponent(b.dataset.say)));document.querySelectorAll("[data-repeat]").forEach(b=>b.onclick=()=>repeatTamilEnglish(l.items[+b.dataset.repeat][1],l.items[+b.dataset.repeat][0]));$("goPractice").onclick=()=>switchView("practice");$("goQuiz").onclick=()=>switchView("quiz");$("markDone").onclick=()=>{if(!state.completed.includes(l.id))state.completed.push(l.id);save();renderList();renderLearn();if(current<lessons.length){current++;renderList();renderLearn()}}}
-function renderPractice(){const l=lessons[current-1];$("practiceView").innerHTML=`<div class="eyebrow">SPEAKING STUDIO</div><h2>Listen, then speak 🎙️</h2><p class="muted">முதலில் sentence-ஐ கேள். பிறகு microphone மூலம் உன் குரலைப் பதிவு செய்து playback கேள்.</p><div class="sentence"><div><strong>${l.items[0][0]}</strong><p>${l.items[0][1]}</p></div><button class="audio" id="practiceListen">🔊 English</button><button class="repeat-btn" id="practiceRepeat">🔁 Tamil → English</button></div><div class="record-box"><p><strong>Step 1:</strong> “Start recording” அழுத்து. Browser microphone permission கேட்டால் Allow செய்.</p><p><strong>Step 2:</strong> English sentence-ஐ சத்தமாகச் சொல்.</p><div class="row"><button class="btn" id="recordBtn">🔴 Start recording</button><button class="btn secondary" id="stopBtn" disabled>Stop</button><button class="btn outline" id="playBtn" disabled>▶ Play recording</button></div><p id="recordStatus" class="muted">Recording stays in this page; it is not uploaded.</p><audio id="recordAudio" controls class="hidden" style="width:100%;margin-top:10px"></audio></div><div class="tip">இந்த prototype உன் குரலைப் பதிவு செய்து மீண்டும் கேட்க உதவும். இது இன்னும் pronunciation-ஐ AI மூலம் மதிப்பிடாது.</div>`;
-$("practiceListen").onclick=()=>speak(l.items[0][0]);$("practiceRepeat").onclick=()=>repeatTamilEnglish(l.items[0][1],l.items[0][0]);$("recordBtn").onclick=startRecording;$("stopBtn").onclick=stopRecording;$("playBtn").onclick=()=>{if(audioBlob){const au=$("recordAudio");au.src=URL.createObjectURL(audioBlob);au.classList.remove("hidden");au.play()}}}
-async function startRecording(){if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){$("recordStatus").textContent="Microphone recording needs HTTPS or localhost and a supported browser.";return}try{const stream=await navigator.mediaDevices.getUserMedia({audio:true});chunks=[];mediaRecorder=new MediaRecorder(stream);mediaRecorder.ondataavailable=e=>{if(e.data.size)chunks.push(e.data)};mediaRecorder.onstop=()=>{audioBlob=new Blob(chunks,{type:mediaRecorder.mimeType||"audio/webm"});stream.getTracks().forEach(t=>t.stop());$("playBtn").disabled=false;$("recordStatus").textContent="Recording ready. Listen to yourself and try again!";$("recordAudio").src=URL.createObjectURL(audioBlob);$("recordAudio").classList.remove("hidden")};mediaRecorder.start();$("recordBtn").disabled=true;$("stopBtn").disabled=false;$("recordStatus").innerHTML='<span class="recording">● Recording… speak now</span>'}catch(e){$("recordStatus").textContent="Microphone access denied or unavailable. Check browser permissions."}}
-function stopRecording(){if(mediaRecorder&&mediaRecorder.state!=="inactive"){mediaRecorder.stop();$("recordBtn").disabled=false;$("stopBtn").disabled=true}}
-function renderQuiz(){const l=lessons[current-1];quizSelections={};$("quizView").innerHTML=`<div class="eyebrow">QUICK CHECK</div><h2>Lesson ${l.id} quiz 🧠</h2><p class="muted">ஒவ்வொரு கேள்விக்கும் ஒரு பதிலைத் தேர்ந்தெடு.</p><div id="quizQuestions">${l.quiz.map((q,i)=>`<div class="question"><strong>${i+1}. ${q.q}</strong><div class="options">${q.opts.map((o,j)=>`<button class="option" data-q="${i}" data-a="${j}">${String.fromCharCode(65+j)}. ${o}</button>`).join("")}</div><div class="feedback" id="fb${i}"></div></div>`).join("")}</div><div class="row" style="margin-top:15px"><button class="btn" id="submitQuiz">Check answers</button><button class="btn secondary" id="retryQuiz">Try again</button></div><div id="quizResult" style="margin-top:12px;font-weight:800"></div>`;
-document.querySelectorAll(".option").forEach(b=>b.onclick=()=>{quizSelections[b.dataset.q]=+b.dataset.a;document.querySelectorAll(`.option[data-q="${b.dataset.q}"]`).forEach(x=>x.classList.remove("selected"));b.classList.add("selected")});
-$("submitQuiz").onclick=()=>{if(Object.keys(quizSelections).length<l.quiz.length){$("quizResult").textContent="முதலில் எல்லா கேள்விகளுக்கும் பதில் தேர்ந்தெடு.";return}let score=0;l.quiz.forEach((q,i)=>{const ok=quizSelections[i]===q.a;if(ok)score++;$("fb"+i).textContent=(ok?"✓ Correct! ":"✗ Correct answer: ")+q.opts[q.a]+" — "+q.why;$("fb"+i).className="feedback "+(ok?"good":"bad");state.attempts++;if(ok)state.correct++});if(score===l.quiz.length&&!state.completed.includes(l.id))state.completed.push(l.id);save();renderList();$("quizResult").textContent=`Your score: ${score}/${l.quiz.length}. ${score===l.quiz.length?"Excellent! 🎉":"Good try — review the lesson and try again."}`};
-$("retryQuiz").onclick=renderQuiz}
-function renderAdvanced(){$("advancedView").innerHTML=`<div class="eyebrow">ADVANCED COURSE</div><div class="locked"><div class="lock-icon">🔒</div><h2>Speak confidently at work</h2><p class="muted">Advanced modules will include job interviews, customer service, phone calls, fluency drills and workplace English.</p><div class="tip" style="text-align:left"><strong>Free now:</strong> All 5 beginner lessons, audio playback, speaking recording and quizzes in this prototype.<br><strong>Planned paid course:</strong> Full video lessons, downloadable worksheets, advanced role-plays and progress tracking across devices.</div><button class="btn" id="interestBtn">I'm interested in the advanced course</button><p id="interestStatus" class="muted"></p><p class="muted" style="font-size:12px">Demo only: no payment is collected and no subscription is activated.</p></div>`;$("interestBtn").onclick=()=>{$("interestStatus").textContent="Thanks! Paid-course checkout is not connected in this prototype. You can add a payment provider after publishing."}}
-function switchView(v){view=v;document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("active",t.dataset.view===v));["learn","practice","quiz","advanced"].forEach(x=>$(x+"View").classList.toggle("hidden",x!==v+"View"));if(v==="learn")renderLearn();if(v==="practice")renderPractice();if(v==="quiz")renderQuiz();if(v==="advanced")renderAdvanced()}
-document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>switchView(t.dataset.view));
-if("serviceWorker" in navigator && location.protocol.startsWith("http"))window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
-renderList();renderLearn();renderPractice();renderQuiz();renderAdvanced();updateStats();
+function renderPhrases(){$("phrases").innerHTML=phrases.map((p,i)=>`<div class="phrase"><div class="english">${p.en}</div><div class="tamil">${p.ta}</div><div class="meta">${p.note}</div><div class="actions"><button class="gold" data-listen="${i}">Listen in English</button><button data-listenta="${i}">Tamil explanation</button><button data-practice="${i}">I repeated it</button></div></div>`).join("");document.querySelectorAll("[data-listen]").forEach(b=>b.onclick=()=>speak(phrases[+b.dataset.listen].en));document.querySelectorAll("[data-listenta]").forEach(b=>b.onclick=()=>speak(phrases[+b.dataset.listenta].ta,true));document.querySelectorAll("[data-practice]").forEach(b=>b.onclick=()=>{practiced.add(+b.dataset.practice);save();updateProgress()})}
+function speak(text,tamil=false){if(!("speechSynthesis"in window)){alert("This browser does not support built-in speech. Try an updated Chrome or Edge.");return}window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);const voices=window.speechSynthesis.getVoices();if(tamil){const v=voices.find(v=>/^ta([-_]|$)/i.test(v.lang)||/tamil/i.test(v.name));if(v){u.voice=v;u.lang=v.lang}else{alert("இந்த browser/device-ல் Tamil voice கிடைக்கவில்லை. Device/browser Tamil text-to-speech voice கிடைத்தால் audio வேலை செய்யும்.");return}}else{const chosen=$("voiceSelect").value;const v=voices.find(v=>v.name===chosen);if(v)u.voice=v;u.lang=v?.lang||"en-US";u.rate=.88}window.speechSynthesis.speak(u)}
+function fillVoices(){const sel=$("voiceSelect"),old=sel.value;const vs=window.speechSynthesis?window.speechSynthesis.getVoices():[];const en=vs.filter(v=>/^en([-_]|$)/i.test(v.lang));sel.innerHTML='<option value="">Default English voice</option>'+en.map(v=>`<option value="${v.name.replace(/"/g,"&quot;")}">${v.name} — ${v.lang}</option>`).join("");if(old)sel.value=old}
+function showRepeat(){const p=phrases[repeatIndex];$("repeatStep").textContent=`Sentence ${repeatIndex+1} of ${phrases.length}`;$("repeatSentence").textContent=p.en;$("repeatTamil").textContent=p.ta}
+$("startRepeat").onclick=()=>{repeatIndex=0;showRepeat();speak(phrases[0].en)};
+$("repeatAgain").onclick=()=>speak(phrases[repeatIndex].en);
+$("listenCurrent").onclick=()=>speak(phrases[repeatIndex].en);
+$("nextRepeat").onclick=()=>{practiced.add(repeatIndex);if(repeatIndex<phrases.length-1){repeatIndex++;showRepeat();speak(phrases[repeatIndex].en)}else{$("repeatStep").textContent="Guided practice finished — great work!";save();updateProgress()}};
+$("testEnglish").onclick=()=>speak("Hello. I am practising professional English.");
+$("testTamil").onclick=()=>speak("வணக்கம். இன்று நாம் ஆங்கிலப் பேச்சுப் பயிற்சி செய்வோம்.",true);
+document.querySelectorAll("[data-module]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-module]").forEach(x=>x.classList.remove("module-active"));b.classList.add("module-active");const n=+b.dataset.module;$("moduleIntro").innerHTML=`<div class="eyebrow" style="color:#087e8b">Module ${n+1}</div><h2>${modules[n][0]}</h2><p>${modules[n][1]}</p><div class="notice">Course map selected. Lesson 1 is currently available below; additional module lessons can be published in later updates.</div>`});
+const key="tem_intermediate_progress";
+function save(){localStorage.setItem(key,JSON.stringify({practiced:[...practiced],roleplay:$("markRoleplay").dataset.done==="1",complete:$("markComplete").dataset.done==="1"}))}
+function load(){try{const d=JSON.parse(localStorage.getItem(key)||"{}");practiced=new Set(d.practiced||[]);if(d.roleplay){$("markRoleplay").dataset.done="1";$("markRoleplay").textContent="Role-play practised ✓"}if(d.complete){$("markComplete").dataset.done="1";$("markComplete").textContent="Lesson marked complete ✓"}}catch(e){}updateProgress()}
+function updateProgress(){let count=practiced.size+( $("markRoleplay").dataset.done==="1"?1:0)+($("markComplete").dataset.done==="1"?1:0);let pct=Math.round(count/5*100);$("pct").textContent=pct+"%";$("bar").style.width=pct+"%";$("progressText").textContent=`${count} of 5 practice milestones completed.`}
+$("markRoleplay").onclick=()=>{$("markRoleplay").dataset.done="1";$("markRoleplay").textContent="Role-play practised ✓";save();updateProgress()};
+$("markComplete").onclick=()=>{$("markComplete").dataset.done="1";$("markComplete").textContent="Lesson marked complete ✓";save();updateProgress()};
+$("resetProgress").onclick=()=>{if(confirm("Reset saved Lesson 1 practice progress on this browser?")){localStorage.removeItem(key);practiced=new Set();$("markRoleplay").dataset.done="0";$("markRoleplay").textContent="I practised the answer";$("markComplete").dataset.done="0";$("markComplete").textContent="Mark lesson practice complete";updateProgress()}};
+const answers={q1:"b",q2:"c",q3:"a",q4:"true",q5:"false"};
+const explanations={q1:"Use “focus on + verb-ing”: focus on solving.",q2:"This gives an update without promising an unconfirmed delivery time.",q3:"The natural collocation is “experience in” a field.",q4:"“Resolving” is the -ing form following the preposition “on”.",q5:"It promises communication about delays, not a specific completion time."};
+$("quiz").onsubmit=e=>{e.preventDefault();let score=0;for(let i=1;i<=5;i++){let q="q"+i,sel=document.querySelector(`input[name="${q}"]:checked`);let ok=!!sel&&sel.value===answers[q];if(ok)score++;$("f"+i).textContent=(ok?"✓ ":"✗ ")+explanations[q];$("f"+i).style.color=ok?"#087e52":"#a44325"}$("score").textContent=`Your score: ${score}/5. ${score>=4?"Strong work — practise the phrases aloud once more.":"Review the explanations, then try again."}`;if(score===5){practiced.add(0);practiced.add(1);practiced.add(2);save();updateProgress()}};
+$("clearQuiz").onclick=()=>{$("quiz").reset();for(let i=1;i<=5;i++)$("f"+i).textContent="";$("score").textContent=""};
+renderPhrases();showRepeat();load();fillVoices();if(window.speechSynthesis)window.speechSynthesis.onvoiceschanged=fillVoices;
+if("serviceWorker"in navigator && location.protocol.startsWith("http"))window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
 </script>
-</body>
-</html>
+</body></html>
