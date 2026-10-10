@@ -4,11 +4,12 @@
   "example": {
     "id": "ex09900",
     "topic": "Personal Growth",
-    "family": "Forgotten Tasks",
-    "en": "I forgot that I needed to try again patiently.",
-    "ta": "நான் பொறுமையாக மீண்டும் முயற்சி செய்ய வேண்டும் என்பதை மறந்துவிட்டேன்.",
+    "family": "Time & Context",
+    "en": "A good time to try again patiently is when I have fewer distractions.",
+    "ta": "கவனச்சிதறல்கள் குறைவாக இருக்கும் போது பொறுமையாக மீண்டும் முயற்சி செய்ய நல்ல நேரம்.",
     "action_en": "try again patiently",
-    "action_ta": "பொறுமையாக மீண்டும் முயற்சி செய்ய"
+    "action_ta": "பொறுமையாக மீண்டும் முயற்சி செய்ய",
+    "pattern_id": "p100"
   },
   "challenge": "Say this sentence aloud three times, then change one detail to make it true for you."
 }

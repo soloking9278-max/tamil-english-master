@@ -1,7 +1,7 @@
 {
   "name": "Tamil English Master",
   "short_name": "Tamil English",
-  "description": "Free public everyday English practice with Tamil meaning and 10,000 sentence examples.",
+  "description": "Free public everyday English practice with 10,000 varied sentence examples and Tamil meanings.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
