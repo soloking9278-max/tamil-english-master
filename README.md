@@ -2,7 +2,8 @@
 
 A responsive, installable web prototype that can also be wrapped as an Android app. It includes:
 - 5 free beginner lessons with Tamil explanations
-- English text-to-speech using the browser's speech engine
+- English text-to-speech using the browser's speech engine, preferring a female English voice when available
+- Tamil → English repeat mode: hear Tamil meaning, then English sentence twice
 - Microphone recording and playback for speaking practice
 - Lesson quizzes, scores and completion progress
 - Local-device progress storage
