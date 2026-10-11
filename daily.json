@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-10",
+  "date": "2026-10-11",
   "title": "Today's example",
   "example": {
-    "id": "ex09900",
+    "id": "ex09901",
     "topic": "Personal Growth",
-    "family": "Time & Context",
-    "en": "A good time to try again patiently is when I have fewer distractions.",
-    "ta": "கவனச்சிதறல்கள் குறைவாக இருக்கும் போது பொறுமையாக மீண்டும் முயற்சி செய்ய நல்ல நேரம்.",
-    "action_en": "try again patiently",
-    "action_ta": "பொறுமையாக மீண்டும் முயற்சி செய்ய",
-    "pattern_id": "p100"
+    "family": "Wants",
+    "en": "I want to make time for a hobby.",
+    "ta": "நான் பொழுதுபோக்குக்காக நேரம் ஒதுக்க விரும்புகிறேன்.",
+    "action_en": "make time for a hobby",
+    "action_ta": "பொழுதுபோக்குக்காக நேரம் ஒதுக்க",
+    "pattern_id": "p001"
   },
   "challenge": "Say this sentence aloud three times, then change one detail to make it true for you."
 }
