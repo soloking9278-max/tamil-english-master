@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "title": "Today's example",
   "example": {
-    "id": "ex09919",
+    "id": "ex09920",
     "topic": "Personal Growth",
     "family": "Needs",
-    "en": "I don't want to rush when I make time for a hobby.",
-    "ta": "நான் பொழுதுபோக்குக்காக நேரம் ஒதுக்கும்போது அவசரப்பட விரும்பவில்லை.",
+    "en": "I need to remember to make time for a hobby, even on busy days.",
+    "ta": "பிஸியான நாட்களிலும் நான் பொழுதுபோக்குக்காக நேரம் ஒதுக்க நினைவில் வைத்துக்கொள்ள வேண்டும்.",
     "action_en": "make time for a hobby",
     "action_ta": "பொழுதுபோக்குக்காக நேரம் ஒதுக்க",
-    "pattern_id": "p019"
+    "pattern_id": "p020"
   },
   "challenge": "Say this sentence aloud three times, then change one detail to make it true for you."
 }
