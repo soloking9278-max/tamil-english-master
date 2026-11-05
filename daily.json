@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "title": "Today's example",
   "example": {
-    "id": "ex09925",
+    "id": "ex09926",
     "topic": "Personal Growth",
     "family": "Plans",
-    "en": "I haven't decided when to make time for a hobby yet.",
-    "ta": "எப்போது பொழுதுபோக்குக்காக நேரம் ஒதுக்க என்று நான் இன்னும் முடிவு செய்யவில்லை.",
+    "en": "I might try to make time for a hobby later if I have time.",
+    "ta": "நேரம் இருந்தால், நான் பொழுதுபோக்குக்காக நேரம் ஒதுக்க முயற்சி செய்யலாம்.",
     "action_en": "make time for a hobby",
     "action_ta": "பொழுதுபோக்குக்காக நேரம் ஒதுக்க",
-    "pattern_id": "p025"
+    "pattern_id": "p026"
   },
   "challenge": "Say this sentence aloud three times, then change one detail to make it true for you."
 }
