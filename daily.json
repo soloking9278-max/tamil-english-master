@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "title": "Today's example",
   "example": {
-    "id": "ex09931",
+    "id": "ex09932",
     "topic": "Personal Growth",
     "family": "Trying",
-    "en": "I'm trying to make time for a hobby without putting too much pressure on myself.",
-    "ta": "எனக்கு அதிக அழுத்தம் கொடுக்காமல் நான் பொழுதுபோக்குக்காக நேரம் ஒதுக்க முயற்சி செய்கிறேன்.",
+    "en": "I'm learning how to make time for a hobby more effectively.",
+    "ta": "இன்னும் சிறப்பாக பொழுதுபோக்குக்காக நேரம் ஒதுக்க எப்படி என்று கற்றுக்கொண்டு இருக்கிறேன்.",
     "action_en": "make time for a hobby",
     "action_ta": "பொழுதுபோக்குக்காக நேரம் ஒதுக்க",
-    "pattern_id": "p031"
+    "pattern_id": "p032"
   },
   "challenge": "Say this sentence aloud three times, then change one detail to make it true for you."
 }
